@@ -6,7 +6,7 @@ package this.for.class.extends.enum.interface.package; // This is a basic parser
 /**
  * Not even JavaC will compile this. If this works than almost anything should parse TM.
  */
-        import your.mother.owned.gottem.Cry2ElectricBoogaloo; public class BorderlineBrokenClass<T extends GenericExtensionTest> {
+        import your.mother.owned.gottem.Cry2ElectricBoogaloo; public private class BorderlineBrokenClass<T extends GenericExtensionTest> {
 
     //TODO: field tests
 

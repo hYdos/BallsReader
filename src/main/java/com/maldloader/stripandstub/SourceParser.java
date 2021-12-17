@@ -11,30 +11,42 @@ import java.util.stream.Collectors;
 /**
  * Very simple parser which ignores the content of methods.
  */
-public class ClassParser {
+public class SourceParser {
     private static final String[] ACCESS_MODIFIERS = {"public", "private", "protected"};
     private static final String[] OTHER_MODIFIERS = {"final"}; //TODO: I cant think of more off the top of my head. Is this it?
     private final String fileSource;
     private final List<Class> imports = new ArrayList<>();
     private String filePackage;
 
-    public ClassParser(InputStream stream) {
+    public SourceParser(InputStream stream) {
         this(toString(stream));
     }
 
-    public ClassParser(String fileSource) {
+    public SourceParser(String fileSource) {
         this.fileSource = fileSource;
 
         for (String s : fileSource.split("\n")) {
             s = cleanString(s);
-            if (Arrays.stream(ACCESS_MODIFIERS).anyMatch(s::startsWith)) {
-                // Assume we have made it past all imports and only classes, fields, and methods are ahead.
-            } else {
-                if (s.startsWith("import"))
-                    parseImport(s.substring(0, s.indexOf(';')));
+            String[] tokenSplit = s.split(";");
+            for (String token : tokenSplit) {
+                token = cleanString(token);
+                if (token.startsWith("import"))
+                    parseImport(token);
 
-                if (s.startsWith("package"))
-                    parsePackage(s.substring(0, s.indexOf(';')));
+                if (token.startsWith("package"))
+                    parsePackage(token);
+
+                List<String> result = Arrays.stream(ACCESS_MODIFIERS).filter(token::startsWith).collect(Collectors.toList());
+                if (result.size() == 1) { // If it's more than 0, the class is beyond repair
+                    String accessModifier = result.get(0);
+                    if (token.startsWith("class", accessModifier.length() + 1))
+                        System.out.println(token.substring(accessModifier.length()));
+
+                    if (token.startsWith("class", accessModifier.length() + 1))
+                        System.out.println(token.substring(accessModifier.length()));
+                } else if (result.size() > 1) {
+                    throw new RuntimeException("Invalid Class! (Has more than one access modifier?)");
+                }
             }
         }
     }
@@ -48,9 +60,9 @@ public class ClassParser {
     }
 
     /**
-     * Sometimes, developers are dumb and put weird spacing in their strings. Lets fix that.
+     * Sometimes, developers are dumb and put weird spacing in their strings. Let's fix that.
      * Example:
-     * "                      import some.import.here;"
+     * "                      import     some.import.here;"
      * would get converted to:
      * "import some.import.here"
      */

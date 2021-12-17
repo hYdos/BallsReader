@@ -1,10 +1,13 @@
 package com.maldloader.stripandstub;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Class {
     private final String name;
     private final String pkg;
+    private final Map<String, Class> generics = new HashMap<>();
     private String[] modifiers;
 
     public Class(String name, String pkg, String[] modifiers) {
@@ -29,6 +32,10 @@ public class Class {
 
     public String getPkg() {
         return pkg;
+    }
+
+    public Map<String, Class> getGenerics() {
+        return generics;
     }
 
     public String[] getModifiers() {

@@ -1,6 +1,6 @@
 package me.hydos.test;
 
-public void main(&str string){
+public void main() {
     // I got no clue how macros should look. ! is a bit of a pain to type. Maybe . prefix? Might be too hard to read and unreadable idk
     print!("Hello, Rust. Does this make Java a native language? flushed");
 }

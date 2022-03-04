@@ -15,7 +15,7 @@ public class SourceParser {
     private static final String[] ACCESS_MODIFIERS = {"public", "private", "protected"};
     private static final String[] OTHER_MODIFIERS = {"final", "native"};
     private final String fileSource;
-    private final List<Class> imports = new ArrayList<>();
+    private final List<String> imports = new ArrayList<>();
     private String filePackage;
 
     public SourceParser(InputStream stream) {
@@ -52,7 +52,7 @@ public class SourceParser {
     }
 
     private void parseImport(String str) {
-        imports.add(Class.parseDirectReference(str.split(" ")[1]));
+        imports.add(str);
     }
 
     private void parsePackage(String str) {
@@ -87,7 +87,7 @@ public class SourceParser {
     /**
      * Returns a list of imports used in the source file
      */
-    public List<Class> getImports() {
+    public List<String> getImports() {
         return imports;
     }
 

@@ -1,2 +1,2 @@
-rootProject.name = "StripAndStub"
+rootProject.name = "BallsReader"
 

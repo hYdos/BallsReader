@@ -1,5 +1,10 @@
 package com.copium;
 
+import com.copium.type.Function;
+import com.copium.type.statements.InvokeMethodStatement;
+import com.copium.type.MethodArg;
+import com.copium.type.statements.Statement;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -24,27 +29,24 @@ public class RustFile {
 
                 for (Function function : this.functions) {
                     StringBuilder rsFunction = new StringBuilder("fn " + function.name + "(");
+
+                    // Method Arguments
                     for (MethodArg argument : function.arguments) {
-                        rsFunction.append(argument.name).append(": ").append(argument.type);
+                        argument.write(rsFunction);
+
+                        if (function.arguments.get(function.arguments.size() - 1) != argument) {
+                            rsFunction.append(", ");
+                        }
                     }
                     rsFunction.append(") {\n");
-                    for (InvokeMethodStatement statement : function.statements) {
-                        rsFunction.append("\t").append(statement.functionName);
-                        if (statement.isMacro) {
-                            rsFunction.append("!");
-                        }
-                        rsFunction.append("(");
-                        for (int i = 0; i < statement.arguments.size(); i++) {
-                            rsFunction.append(statement.arguments.get(i));
 
-                            if (i != statement.arguments.size() - 1) {
-                                // Not last arg, Add a comma.
-                                rsFunction.append(", ");
-                            }
-                        }
-                        rsFunction.append(");\n").append("}\n");
+                    // Method Body (Statements)
+                    for (Statement statement : function.statements) {
+                        rsFunction.append("\t");
+                        statement.write(rsFunction);
                     }
 
+                    rsFunction.append("}\n");
                     writer.write(rsFunction.toString());
                 }
             }

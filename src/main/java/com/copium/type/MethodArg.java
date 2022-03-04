@@ -1,4 +1,6 @@
-package com.copium;
+package com.copium.type;
+
+import java.io.IOException;
 
 public class MethodArg {
     public final String name;
@@ -7,5 +9,9 @@ public class MethodArg {
     public MethodArg(String name, String type) {
         this.name = name;
         this.type = type;
+    }
+
+    public void write(StringBuilder writer) throws IOException {
+        writer.append(this.name).append(": ").append(this.type);
     }
 }

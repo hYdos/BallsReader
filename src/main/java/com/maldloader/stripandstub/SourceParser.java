@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  */
 public class SourceParser {
     private static final String[] ACCESS_MODIFIERS = {"public", "private", "protected"};
-    private static final String[] OTHER_MODIFIERS = {"final", "native", "synthetic"}; //TODO: I cant think of more off the top of my head. Is this it?
+    private static final String[] OTHER_MODIFIERS = {"final", "native"};
     private final String fileSource;
     private final List<Class> imports = new ArrayList<>();
     private String filePackage;

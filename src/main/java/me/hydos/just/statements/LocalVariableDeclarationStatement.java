@@ -1,4 +1,4 @@
-package com.copium.type.statements;
+package me.hydos.just.statements;
 
 public record LocalVariableDeclarationStatement(String type, String name, String defaultValue) implements Statement {
 

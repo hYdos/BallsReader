@@ -1,5 +1,7 @@
 package me.hydos.test;
 
+public final u64 RANDOM_CONSTANT = 34548945;
+
 public void main() {
     // Very cool comment
     print!("Hello, Rust. Your syntax is now fixed :)\n");
@@ -7,4 +9,8 @@ public void main() {
     u32 aInt = 32;
     var anotherInt = 32;
     print!("32 + 32 = {}", aInt + anotherInt);
+}
+
+public u64 imConcerned(&str bruh) {
+    return 123456;
 }

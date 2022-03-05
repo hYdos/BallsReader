@@ -1,4 +1,8 @@
-lexer grammar rightNut;
+lexer grammar JustLexer;
+
+@header {
+package me.hydos.antlr;
+}
 
 // Keywords
 

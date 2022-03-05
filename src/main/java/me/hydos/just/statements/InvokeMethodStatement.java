@@ -1,4 +1,4 @@
-package com.copium.type.statements;
+package me.hydos.just.statements;
 
 import java.util.List;
 

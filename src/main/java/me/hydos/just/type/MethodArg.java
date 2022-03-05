@@ -1,6 +1,4 @@
-package com.copium.type;
-
-import java.io.IOException;
+package me.hydos.just.type;
 
 public class MethodArg {
     public final String name;
@@ -11,7 +9,7 @@ public class MethodArg {
         this.type = type;
     }
 
-    public void write(StringBuilder writer) throws IOException {
+    public void write(StringBuilder writer) {
         writer.append(this.name).append(": ").append(this.type);
     }
 }

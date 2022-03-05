@@ -1,6 +1,7 @@
-package com.coping;
+// Generated from JustLexer.g4 by ANTLR 4.9.3
 
-// Generated from C:/Users/AllOsSuck/Projects/MaldLoader/BallsReader/deeznuts\rightNut.g4 by ANTLR 4.9.2
+package me.hydos.antlr;
+
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -11,31 +12,31 @@ import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class rightNut extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
+public class JustLexer extends Lexer {
+	static { RuntimeMetaData.checkVersion("4.9.3", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		ABSTRACT=1, ASSERT=2, BOOLEAN=3, BREAK=4, BYTE=5, CASE=6, CATCH=7, CHAR=8,
-		CLASS=9, CONST=10, CONTINUE=11, DEFAULT=12, DO=13, DOUBLE=14, ELSE=15,
-		ENUM=16, EXTENDS=17, FINAL=18, FINALLY=19, FLOAT=20, FOR=21, IF=22, GOTO=23,
-		IMPLEMENTS=24, IMPORT=25, INSTANCEOF=26, INT=27, INTERFACE=28, LONG=29,
-		NATIVE=30, NEW=31, PACKAGE=32, PRIVATE=33, PROTECTED=34, PUBLIC=35, RETURN=36,
-		SHORT=37, STATIC=38, STRICTFP=39, SUPER=40, SWITCH=41, SYNCHRONIZED=42,
-		THIS=43, THROW=44, THROWS=45, TRANSIENT=46, TRY=47, VOID=48, VOLATILE=49,
-		WHILE=50, VAR=51, YIELD=52, RECORD=53, SEALED=54, PERMITS=55, NON_SEALED=56,
-		DECIMAL_LITERAL=57, HEX_LITERAL=58, OCT_LITERAL=59, BINARY_LITERAL=60,
-		FLOAT_LITERAL=61, HEX_FLOAT_LITERAL=62, BOOL_LITERAL=63, CHAR_LITERAL=64,
-		STRING_LITERAL=65, TEXT_BLOCK=66, NULL_LITERAL=67, LPAREN=68, RPAREN=69,
-		LBRACE=70, RBRACE=71, LBRACK=72, RBRACK=73, SEMI=74, COMMA=75, DOT=76,
-		ASSIGN=77, GT=78, LT=79, BANG=80, TILDE=81, QUESTION=82, COLON=83, EQUAL=84,
-		LE=85, GE=86, NOTEQUAL=87, AND=88, OR=89, INC=90, DEC=91, ADD=92, SUB=93,
-		MUL=94, DIV=95, BITAND=96, BITOR=97, CARET=98, MOD=99, ADD_ASSIGN=100,
-		SUB_ASSIGN=101, MUL_ASSIGN=102, DIV_ASSIGN=103, AND_ASSIGN=104, OR_ASSIGN=105,
-		XOR_ASSIGN=106, MOD_ASSIGN=107, LSHIFT_ASSIGN=108, RSHIFT_ASSIGN=109,
-		URSHIFT_ASSIGN=110, ARROW=111, COLONCOLON=112, AT=113, ELLIPSIS=114, WS=115,
+		ABSTRACT=1, ASSERT=2, BOOLEAN=3, BREAK=4, BYTE=5, CASE=6, CATCH=7, CHAR=8, 
+		CLASS=9, CONST=10, CONTINUE=11, DEFAULT=12, DO=13, DOUBLE=14, ELSE=15, 
+		ENUM=16, EXTENDS=17, FINAL=18, FINALLY=19, FLOAT=20, FOR=21, IF=22, GOTO=23, 
+		IMPLEMENTS=24, IMPORT=25, INSTANCEOF=26, INT=27, INTERFACE=28, LONG=29, 
+		NATIVE=30, NEW=31, PACKAGE=32, PRIVATE=33, PROTECTED=34, PUBLIC=35, RETURN=36, 
+		SHORT=37, STATIC=38, STRICTFP=39, SUPER=40, SWITCH=41, SYNCHRONIZED=42, 
+		THIS=43, THROW=44, THROWS=45, TRANSIENT=46, TRY=47, VOID=48, VOLATILE=49, 
+		WHILE=50, VAR=51, YIELD=52, RECORD=53, SEALED=54, PERMITS=55, NON_SEALED=56, 
+		DECIMAL_LITERAL=57, HEX_LITERAL=58, OCT_LITERAL=59, BINARY_LITERAL=60, 
+		FLOAT_LITERAL=61, HEX_FLOAT_LITERAL=62, BOOL_LITERAL=63, CHAR_LITERAL=64, 
+		STRING_LITERAL=65, TEXT_BLOCK=66, NULL_LITERAL=67, LPAREN=68, RPAREN=69, 
+		LBRACE=70, RBRACE=71, LBRACK=72, RBRACK=73, SEMI=74, COMMA=75, DOT=76, 
+		ASSIGN=77, GT=78, LT=79, BANG=80, TILDE=81, QUESTION=82, COLON=83, EQUAL=84, 
+		LE=85, GE=86, NOTEQUAL=87, AND=88, OR=89, INC=90, DEC=91, ADD=92, SUB=93, 
+		MUL=94, DIV=95, BITAND=96, BITOR=97, CARET=98, MOD=99, ADD_ASSIGN=100, 
+		SUB_ASSIGN=101, MUL_ASSIGN=102, DIV_ASSIGN=103, AND_ASSIGN=104, OR_ASSIGN=105, 
+		XOR_ASSIGN=106, MOD_ASSIGN=107, LSHIFT_ASSIGN=108, RSHIFT_ASSIGN=109, 
+		URSHIFT_ASSIGN=110, ARROW=111, COLONCOLON=112, AT=113, ELLIPSIS=114, WS=115, 
 		COMMENT=116, LINE_COMMENT=117, IDENTIFIER=118;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
@@ -47,24 +48,24 @@ public class rightNut extends Lexer {
 
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"ABSTRACT", "ASSERT", "BOOLEAN", "BREAK", "BYTE", "CASE", "CATCH", "CHAR",
-			"CLASS", "CONST", "CONTINUE", "DEFAULT", "DO", "DOUBLE", "ELSE", "ENUM",
-			"EXTENDS", "FINAL", "FINALLY", "FLOAT", "FOR", "IF", "GOTO", "IMPLEMENTS",
-			"IMPORT", "INSTANCEOF", "INT", "INTERFACE", "LONG", "NATIVE", "NEW",
-			"PACKAGE", "PRIVATE", "PROTECTED", "PUBLIC", "RETURN", "SHORT", "STATIC",
-			"STRICTFP", "SUPER", "SWITCH", "SYNCHRONIZED", "THIS", "THROW", "THROWS",
-			"TRANSIENT", "TRY", "VOID", "VOLATILE", "WHILE", "VAR", "YIELD", "RECORD",
-			"SEALED", "PERMITS", "NON_SEALED", "DECIMAL_LITERAL", "HEX_LITERAL",
-			"OCT_LITERAL", "BINARY_LITERAL", "FLOAT_LITERAL", "HEX_FLOAT_LITERAL",
-			"BOOL_LITERAL", "CHAR_LITERAL", "STRING_LITERAL", "TEXT_BLOCK", "NULL_LITERAL",
-			"LPAREN", "RPAREN", "LBRACE", "RBRACE", "LBRACK", "RBRACK", "SEMI", "COMMA",
-			"DOT", "ASSIGN", "GT", "LT", "BANG", "TILDE", "QUESTION", "COLON", "EQUAL",
-			"LE", "GE", "NOTEQUAL", "AND", "OR", "INC", "DEC", "ADD", "SUB", "MUL",
-			"DIV", "BITAND", "BITOR", "CARET", "MOD", "ADD_ASSIGN", "SUB_ASSIGN",
-			"MUL_ASSIGN", "DIV_ASSIGN", "AND_ASSIGN", "OR_ASSIGN", "XOR_ASSIGN",
-			"MOD_ASSIGN", "LSHIFT_ASSIGN", "RSHIFT_ASSIGN", "URSHIFT_ASSIGN", "ARROW",
-			"COLONCOLON", "AT", "ELLIPSIS", "WS", "COMMENT", "LINE_COMMENT", "IDENTIFIER",
-			"ExponentPart", "EscapeSequence", "HexDigits", "HexDigit", "Digits",
+			"ABSTRACT", "ASSERT", "BOOLEAN", "BREAK", "BYTE", "CASE", "CATCH", "CHAR", 
+			"CLASS", "CONST", "CONTINUE", "DEFAULT", "DO", "DOUBLE", "ELSE", "ENUM", 
+			"EXTENDS", "FINAL", "FINALLY", "FLOAT", "FOR", "IF", "GOTO", "IMPLEMENTS", 
+			"IMPORT", "INSTANCEOF", "INT", "INTERFACE", "LONG", "NATIVE", "NEW", 
+			"PACKAGE", "PRIVATE", "PROTECTED", "PUBLIC", "RETURN", "SHORT", "STATIC", 
+			"STRICTFP", "SUPER", "SWITCH", "SYNCHRONIZED", "THIS", "THROW", "THROWS", 
+			"TRANSIENT", "TRY", "VOID", "VOLATILE", "WHILE", "VAR", "YIELD", "RECORD", 
+			"SEALED", "PERMITS", "NON_SEALED", "DECIMAL_LITERAL", "HEX_LITERAL", 
+			"OCT_LITERAL", "BINARY_LITERAL", "FLOAT_LITERAL", "HEX_FLOAT_LITERAL", 
+			"BOOL_LITERAL", "CHAR_LITERAL", "STRING_LITERAL", "TEXT_BLOCK", "NULL_LITERAL", 
+			"LPAREN", "RPAREN", "LBRACE", "RBRACE", "LBRACK", "RBRACK", "SEMI", "COMMA", 
+			"DOT", "ASSIGN", "GT", "LT", "BANG", "TILDE", "QUESTION", "COLON", "EQUAL", 
+			"LE", "GE", "NOTEQUAL", "AND", "OR", "INC", "DEC", "ADD", "SUB", "MUL", 
+			"DIV", "BITAND", "BITOR", "CARET", "MOD", "ADD_ASSIGN", "SUB_ASSIGN", 
+			"MUL_ASSIGN", "DIV_ASSIGN", "AND_ASSIGN", "OR_ASSIGN", "XOR_ASSIGN", 
+			"MOD_ASSIGN", "LSHIFT_ASSIGN", "RSHIFT_ASSIGN", "URSHIFT_ASSIGN", "ARROW", 
+			"COLONCOLON", "AT", "ELLIPSIS", "WS", "COMMENT", "LINE_COMMENT", "IDENTIFIER", 
+			"ExponentPart", "EscapeSequence", "HexDigits", "HexDigit", "Digits", 
 			"LetterOrDigit", "Letter"
 		};
 	}
@@ -72,42 +73,42 @@ public class rightNut extends Lexer {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'abstract'", "'assert'", "'boolean'", "'break'", "'byte'", "'case'",
-			"'catch'", "'char'", "'class'", "'const'", "'continue'", "'default'",
-			"'do'", "'double'", "'else'", "'enum'", "'extends'", "'final'", "'finally'",
-			"'float'", "'for'", "'if'", "'goto'", "'implements'", "'import'", "'instanceof'",
-			"'int'", "'interface'", "'long'", "'native'", "'new'", "'package'", "'private'",
-			"'protected'", "'public'", "'return'", "'short'", "'static'", "'strictfp'",
-			"'super'", "'switch'", "'synchronized'", "'this'", "'throw'", "'throws'",
-			"'transient'", "'try'", "'void'", "'volatile'", "'while'", "'var'", "'yield'",
-			"'record'", "'sealed'", "'permits'", "'non-sealed'", null, null, null,
-			null, null, null, null, null, null, null, "'null'", "'('", "')'", "'{'",
-			"'}'", "'['", "']'", "';'", "','", "'.'", "'='", "'>'", "'<'", "'!'",
-			"'~'", "'?'", "':'", "'=='", "'<='", "'>='", "'!='", "'&&'", "'||'",
-			"'++'", "'--'", "'+'", "'-'", "'*'", "'/'", "'&'", "'|'", "'^'", "'%'",
-			"'+='", "'-='", "'*='", "'/='", "'&='", "'|='", "'^='", "'%='", "'<<='",
+			null, "'abstract'", "'assert'", "'boolean'", "'break'", "'byte'", "'case'", 
+			"'catch'", "'char'", "'class'", "'const'", "'continue'", "'default'", 
+			"'do'", "'double'", "'else'", "'enum'", "'extends'", "'final'", "'finally'", 
+			"'float'", "'for'", "'if'", "'goto'", "'implements'", "'import'", "'instanceof'", 
+			"'int'", "'interface'", "'long'", "'native'", "'new'", "'package'", "'private'", 
+			"'protected'", "'public'", "'return'", "'short'", "'static'", "'strictfp'", 
+			"'super'", "'switch'", "'synchronized'", "'this'", "'throw'", "'throws'", 
+			"'transient'", "'try'", "'void'", "'volatile'", "'while'", "'var'", "'yield'", 
+			"'record'", "'sealed'", "'permits'", "'non-sealed'", null, null, null, 
+			null, null, null, null, null, null, null, "'null'", "'('", "')'", "'{'", 
+			"'}'", "'['", "']'", "';'", "','", "'.'", "'='", "'>'", "'<'", "'!'", 
+			"'~'", "'?'", "':'", "'=='", "'<='", "'>='", "'!='", "'&&'", "'||'", 
+			"'++'", "'--'", "'+'", "'-'", "'*'", "'/'", "'&'", "'|'", "'^'", "'%'", 
+			"'+='", "'-='", "'*='", "'/='", "'&='", "'|='", "'^='", "'%='", "'<<='", 
 			"'>>='", "'>>>='", "'->'", "'::'", "'@'", "'...'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "ABSTRACT", "ASSERT", "BOOLEAN", "BREAK", "BYTE", "CASE", "CATCH",
-			"CHAR", "CLASS", "CONST", "CONTINUE", "DEFAULT", "DO", "DOUBLE", "ELSE",
-			"ENUM", "EXTENDS", "FINAL", "FINALLY", "FLOAT", "FOR", "IF", "GOTO",
-			"IMPLEMENTS", "IMPORT", "INSTANCEOF", "INT", "INTERFACE", "LONG", "NATIVE",
-			"NEW", "PACKAGE", "PRIVATE", "PROTECTED", "PUBLIC", "RETURN", "SHORT",
-			"STATIC", "STRICTFP", "SUPER", "SWITCH", "SYNCHRONIZED", "THIS", "THROW",
-			"THROWS", "TRANSIENT", "TRY", "VOID", "VOLATILE", "WHILE", "VAR", "YIELD",
-			"RECORD", "SEALED", "PERMITS", "NON_SEALED", "DECIMAL_LITERAL", "HEX_LITERAL",
-			"OCT_LITERAL", "BINARY_LITERAL", "FLOAT_LITERAL", "HEX_FLOAT_LITERAL",
-			"BOOL_LITERAL", "CHAR_LITERAL", "STRING_LITERAL", "TEXT_BLOCK", "NULL_LITERAL",
-			"LPAREN", "RPAREN", "LBRACE", "RBRACE", "LBRACK", "RBRACK", "SEMI", "COMMA",
-			"DOT", "ASSIGN", "GT", "LT", "BANG", "TILDE", "QUESTION", "COLON", "EQUAL",
-			"LE", "GE", "NOTEQUAL", "AND", "OR", "INC", "DEC", "ADD", "SUB", "MUL",
-			"DIV", "BITAND", "BITOR", "CARET", "MOD", "ADD_ASSIGN", "SUB_ASSIGN",
-			"MUL_ASSIGN", "DIV_ASSIGN", "AND_ASSIGN", "OR_ASSIGN", "XOR_ASSIGN",
-			"MOD_ASSIGN", "LSHIFT_ASSIGN", "RSHIFT_ASSIGN", "URSHIFT_ASSIGN", "ARROW",
+			null, "ABSTRACT", "ASSERT", "BOOLEAN", "BREAK", "BYTE", "CASE", "CATCH", 
+			"CHAR", "CLASS", "CONST", "CONTINUE", "DEFAULT", "DO", "DOUBLE", "ELSE", 
+			"ENUM", "EXTENDS", "FINAL", "FINALLY", "FLOAT", "FOR", "IF", "GOTO", 
+			"IMPLEMENTS", "IMPORT", "INSTANCEOF", "INT", "INTERFACE", "LONG", "NATIVE", 
+			"NEW", "PACKAGE", "PRIVATE", "PROTECTED", "PUBLIC", "RETURN", "SHORT", 
+			"STATIC", "STRICTFP", "SUPER", "SWITCH", "SYNCHRONIZED", "THIS", "THROW", 
+			"THROWS", "TRANSIENT", "TRY", "VOID", "VOLATILE", "WHILE", "VAR", "YIELD", 
+			"RECORD", "SEALED", "PERMITS", "NON_SEALED", "DECIMAL_LITERAL", "HEX_LITERAL", 
+			"OCT_LITERAL", "BINARY_LITERAL", "FLOAT_LITERAL", "HEX_FLOAT_LITERAL", 
+			"BOOL_LITERAL", "CHAR_LITERAL", "STRING_LITERAL", "TEXT_BLOCK", "NULL_LITERAL", 
+			"LPAREN", "RPAREN", "LBRACE", "RBRACE", "LBRACK", "RBRACK", "SEMI", "COMMA", 
+			"DOT", "ASSIGN", "GT", "LT", "BANG", "TILDE", "QUESTION", "COLON", "EQUAL", 
+			"LE", "GE", "NOTEQUAL", "AND", "OR", "INC", "DEC", "ADD", "SUB", "MUL", 
+			"DIV", "BITAND", "BITOR", "CARET", "MOD", "ADD_ASSIGN", "SUB_ASSIGN", 
+			"MUL_ASSIGN", "DIV_ASSIGN", "AND_ASSIGN", "OR_ASSIGN", "XOR_ASSIGN", 
+			"MOD_ASSIGN", "LSHIFT_ASSIGN", "RSHIFT_ASSIGN", "URSHIFT_ASSIGN", "ARROW", 
 			"COLONCOLON", "AT", "ELLIPSIS", "WS", "COMMENT", "LINE_COMMENT", "IDENTIFIER"
 		};
 	}
@@ -146,13 +147,13 @@ public class rightNut extends Lexer {
 	}
 
 
-	public rightNut(CharStream input) {
+	public JustLexer(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	@Override
-	public String getGrammarFileName() { return "rightNut.g4"; }
+	public String getGrammarFileName() { return "JustLexer.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

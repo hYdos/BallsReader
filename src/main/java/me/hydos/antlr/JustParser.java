@@ -1,6 +1,7 @@
-package com.coping;
+// Generated from JustParser.g4 by ANTLR 4.9.3
 
-// Generated from C:/Users/AllOsSuck/Projects/MaldLoader/BallsReader/deeznuts\leftNut.g4 by ANTLR 4.9.2
+ package me.hydos.antlr;
+
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -11,105 +12,105 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class leftNut extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
+public class JustParser extends Parser {
+	static { RuntimeMetaData.checkVersion("4.9.3", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		ABSTRACT=1, ASSERT=2, BOOLEAN=3, BREAK=4, BYTE=5, CASE=6, CATCH=7, CHAR=8,
-		CLASS=9, CONST=10, CONTINUE=11, DEFAULT=12, DO=13, DOUBLE=14, ELSE=15,
-		ENUM=16, EXTENDS=17, FINAL=18, FINALLY=19, FLOAT=20, FOR=21, IF=22, GOTO=23,
-		IMPLEMENTS=24, IMPORT=25, INSTANCEOF=26, INT=27, INTERFACE=28, LONG=29,
-		NATIVE=30, NEW=31, PACKAGE=32, PRIVATE=33, PROTECTED=34, PUBLIC=35, RETURN=36,
-		SHORT=37, STATIC=38, STRICTFP=39, SUPER=40, SWITCH=41, SYNCHRONIZED=42,
-		THIS=43, THROW=44, THROWS=45, TRANSIENT=46, TRY=47, VOID=48, VOLATILE=49,
-		WHILE=50, VAR=51, YIELD=52, RECORD=53, SEALED=54, PERMITS=55, NON_SEALED=56,
-		DECIMAL_LITERAL=57, HEX_LITERAL=58, OCT_LITERAL=59, BINARY_LITERAL=60,
-		FLOAT_LITERAL=61, HEX_FLOAT_LITERAL=62, BOOL_LITERAL=63, CHAR_LITERAL=64,
-		STRING_LITERAL=65, TEXT_BLOCK=66, NULL_LITERAL=67, LPAREN=68, RPAREN=69,
-		LBRACE=70, RBRACE=71, LBRACK=72, RBRACK=73, SEMI=74, COMMA=75, DOT=76,
-		ASSIGN=77, GT=78, LT=79, BANG=80, TILDE=81, QUESTION=82, COLON=83, EQUAL=84,
-		LE=85, GE=86, NOTEQUAL=87, AND=88, OR=89, INC=90, DEC=91, ADD=92, SUB=93,
-		MUL=94, DIV=95, BITAND=96, BITOR=97, CARET=98, MOD=99, ADD_ASSIGN=100,
-		SUB_ASSIGN=101, MUL_ASSIGN=102, DIV_ASSIGN=103, AND_ASSIGN=104, OR_ASSIGN=105,
-		XOR_ASSIGN=106, MOD_ASSIGN=107, LSHIFT_ASSIGN=108, RSHIFT_ASSIGN=109,
-		URSHIFT_ASSIGN=110, ARROW=111, COLONCOLON=112, AT=113, ELLIPSIS=114, WS=115,
-		COMMENT=116, LINE_COMMENT=117, IDENTIFIER=118, OPEN=119, REQUIRES=120,
+		ABSTRACT=1, ASSERT=2, BOOLEAN=3, BREAK=4, BYTE=5, CASE=6, CATCH=7, CHAR=8, 
+		CLASS=9, CONST=10, CONTINUE=11, DEFAULT=12, DO=13, DOUBLE=14, ELSE=15, 
+		ENUM=16, EXTENDS=17, FINAL=18, FINALLY=19, FLOAT=20, FOR=21, IF=22, GOTO=23, 
+		IMPLEMENTS=24, IMPORT=25, INSTANCEOF=26, INT=27, INTERFACE=28, LONG=29, 
+		NATIVE=30, NEW=31, PACKAGE=32, PRIVATE=33, PROTECTED=34, PUBLIC=35, RETURN=36, 
+		SHORT=37, STATIC=38, STRICTFP=39, SUPER=40, SWITCH=41, SYNCHRONIZED=42, 
+		THIS=43, THROW=44, THROWS=45, TRANSIENT=46, TRY=47, VOID=48, VOLATILE=49, 
+		WHILE=50, VAR=51, YIELD=52, RECORD=53, SEALED=54, PERMITS=55, NON_SEALED=56, 
+		DECIMAL_LITERAL=57, HEX_LITERAL=58, OCT_LITERAL=59, BINARY_LITERAL=60, 
+		FLOAT_LITERAL=61, HEX_FLOAT_LITERAL=62, BOOL_LITERAL=63, CHAR_LITERAL=64, 
+		STRING_LITERAL=65, TEXT_BLOCK=66, NULL_LITERAL=67, LPAREN=68, RPAREN=69, 
+		LBRACE=70, RBRACE=71, LBRACK=72, RBRACK=73, SEMI=74, COMMA=75, DOT=76, 
+		ASSIGN=77, GT=78, LT=79, BANG=80, TILDE=81, QUESTION=82, COLON=83, EQUAL=84, 
+		LE=85, GE=86, NOTEQUAL=87, AND=88, OR=89, INC=90, DEC=91, ADD=92, SUB=93, 
+		MUL=94, DIV=95, BITAND=96, BITOR=97, CARET=98, MOD=99, ADD_ASSIGN=100, 
+		SUB_ASSIGN=101, MUL_ASSIGN=102, DIV_ASSIGN=103, AND_ASSIGN=104, OR_ASSIGN=105, 
+		XOR_ASSIGN=106, MOD_ASSIGN=107, LSHIFT_ASSIGN=108, RSHIFT_ASSIGN=109, 
+		URSHIFT_ASSIGN=110, ARROW=111, COLONCOLON=112, AT=113, ELLIPSIS=114, WS=115, 
+		COMMENT=116, LINE_COMMENT=117, IDENTIFIER=118, OPEN=119, REQUIRES=120, 
 		EXPORTS=121, OPENS=122, TO=123, USES=124, PROVIDES=125, WITH=126, TRANSITIVE=127;
 	public static final int
-		RULE_compilationUnit = 0, RULE_packageDeclaration = 1, RULE_importDeclaration = 2,
-		RULE_typeDeclaration = 3, RULE_modifier = 4, RULE_classOrInterfaceModifier = 5,
-		RULE_variableModifier = 6, RULE_classDeclaration = 7, RULE_typeParameters = 8,
-		RULE_typeParameter = 9, RULE_typeBound = 10, RULE_enumDeclaration = 11,
-		RULE_enumConstants = 12, RULE_enumConstant = 13, RULE_enumBodyDeclarations = 14,
-		RULE_interfaceDeclaration = 15, RULE_classBody = 16, RULE_interfaceBody = 17,
-		RULE_classBodyDeclaration = 18, RULE_memberDeclaration = 19, RULE_methodDeclaration = 20,
-		RULE_methodBody = 21, RULE_typeTypeOrVoid = 22, RULE_genericMethodDeclaration = 23,
-		RULE_genericConstructorDeclaration = 24, RULE_constructorDeclaration = 25,
-		RULE_fieldDeclaration = 26, RULE_interfaceBodyDeclaration = 27, RULE_interfaceMemberDeclaration = 28,
-		RULE_constDeclaration = 29, RULE_constantDeclarator = 30, RULE_interfaceMethodDeclaration = 31,
-		RULE_interfaceMethodModifier = 32, RULE_genericInterfaceMethodDeclaration = 33,
-		RULE_interfaceCommonBodyDeclaration = 34, RULE_variableDeclarators = 35,
-		RULE_variableDeclarator = 36, RULE_variableDeclaratorId = 37, RULE_variableInitializer = 38,
-		RULE_arrayInitializer = 39, RULE_classOrInterfaceType = 40, RULE_typeArgument = 41,
-		RULE_qualifiedNameList = 42, RULE_formalParameters = 43, RULE_receiverParameter = 44,
-		RULE_formalParameterList = 45, RULE_formalParameter = 46, RULE_lastFormalParameter = 47,
-		RULE_lambdaLVTIList = 48, RULE_lambdaLVTIParameter = 49, RULE_qualifiedName = 50,
-		RULE_literal = 51, RULE_integerLiteral = 52, RULE_floatLiteral = 53, RULE_altAnnotationQualifiedName = 54,
-		RULE_annotation = 55, RULE_elementValuePairs = 56, RULE_elementValuePair = 57,
-		RULE_elementValue = 58, RULE_elementValueArrayInitializer = 59, RULE_annotationTypeDeclaration = 60,
-		RULE_annotationTypeBody = 61, RULE_annotationTypeElementDeclaration = 62,
-		RULE_annotationTypeElementRest = 63, RULE_annotationMethodOrConstantRest = 64,
-		RULE_annotationMethodRest = 65, RULE_annotationConstantRest = 66, RULE_defaultValue = 67,
-		RULE_recordDeclaration = 68, RULE_recordHeader = 69, RULE_recordComponentList = 70,
-		RULE_recordComponent = 71, RULE_recordBody = 72, RULE_block = 73, RULE_blockStatement = 74,
-		RULE_localVariableDeclaration = 75, RULE_identifier = 76, RULE_localTypeDeclaration = 77,
-		RULE_statement = 78, RULE_catchClause = 79, RULE_catchType = 80, RULE_finallyBlock = 81,
-		RULE_resourceSpecification = 82, RULE_resources = 83, RULE_resource = 84,
-		RULE_switchBlockStatementGroup = 85, RULE_switchLabel = 86, RULE_forControl = 87,
-		RULE_forInit = 88, RULE_enhancedForControl = 89, RULE_parExpression = 90,
-		RULE_expressionList = 91, RULE_methodCall = 92, RULE_expression = 93,
-		RULE_pattern = 94, RULE_lambdaExpression = 95, RULE_lambdaParameters = 96,
-		RULE_lambdaBody = 97, RULE_primary = 98, RULE_switchExpression = 99, RULE_switchLabeledRule = 100,
-		RULE_guardedPattern = 101, RULE_switchRuleOutcome = 102, RULE_classType = 103,
-		RULE_creator = 104, RULE_createdName = 105, RULE_innerCreator = 106, RULE_arrayCreatorRest = 107,
-		RULE_classCreatorRest = 108, RULE_explicitGenericInvocation = 109, RULE_typeArgumentsOrDiamond = 110,
-		RULE_nonWildcardTypeArgumentsOrDiamond = 111, RULE_nonWildcardTypeArguments = 112,
-		RULE_typeList = 113, RULE_typeType = 114, RULE_primitiveType = 115, RULE_typeArguments = 116,
+		RULE_compilationUnit = 0, RULE_packageDeclaration = 1, RULE_importDeclaration = 2, 
+		RULE_typeDeclaration = 3, RULE_modifier = 4, RULE_classOrInterfaceModifier = 5, 
+		RULE_variableModifier = 6, RULE_classDeclaration = 7, RULE_typeParameters = 8, 
+		RULE_typeParameter = 9, RULE_typeBound = 10, RULE_enumDeclaration = 11, 
+		RULE_enumConstants = 12, RULE_enumConstant = 13, RULE_enumBodyDeclarations = 14, 
+		RULE_interfaceDeclaration = 15, RULE_classBody = 16, RULE_interfaceBody = 17, 
+		RULE_classBodyDeclaration = 18, RULE_memberDeclaration = 19, RULE_methodDeclaration = 20, 
+		RULE_methodBody = 21, RULE_typeTypeOrVoid = 22, RULE_genericMethodDeclaration = 23, 
+		RULE_genericConstructorDeclaration = 24, RULE_constructorDeclaration = 25, 
+		RULE_fieldDeclaration = 26, RULE_interfaceBodyDeclaration = 27, RULE_interfaceMemberDeclaration = 28, 
+		RULE_constDeclaration = 29, RULE_constantDeclarator = 30, RULE_interfaceMethodDeclaration = 31, 
+		RULE_interfaceMethodModifier = 32, RULE_genericInterfaceMethodDeclaration = 33, 
+		RULE_interfaceCommonBodyDeclaration = 34, RULE_variableDeclarators = 35, 
+		RULE_variableDeclarator = 36, RULE_variableDeclaratorId = 37, RULE_variableInitializer = 38, 
+		RULE_arrayInitializer = 39, RULE_classOrInterfaceType = 40, RULE_typeArgument = 41, 
+		RULE_qualifiedNameList = 42, RULE_formalParameters = 43, RULE_receiverParameter = 44, 
+		RULE_formalParameterList = 45, RULE_formalParameter = 46, RULE_lastFormalParameter = 47, 
+		RULE_lambdaLVTIList = 48, RULE_lambdaLVTIParameter = 49, RULE_qualifiedName = 50, 
+		RULE_literal = 51, RULE_integerLiteral = 52, RULE_floatLiteral = 53, RULE_altAnnotationQualifiedName = 54, 
+		RULE_annotation = 55, RULE_elementValuePairs = 56, RULE_elementValuePair = 57, 
+		RULE_elementValue = 58, RULE_elementValueArrayInitializer = 59, RULE_annotationTypeDeclaration = 60, 
+		RULE_annotationTypeBody = 61, RULE_annotationTypeElementDeclaration = 62, 
+		RULE_annotationTypeElementRest = 63, RULE_annotationMethodOrConstantRest = 64, 
+		RULE_annotationMethodRest = 65, RULE_annotationConstantRest = 66, RULE_defaultValue = 67, 
+		RULE_recordDeclaration = 68, RULE_recordHeader = 69, RULE_recordComponentList = 70, 
+		RULE_recordComponent = 71, RULE_recordBody = 72, RULE_block = 73, RULE_blockStatement = 74, 
+		RULE_localVariableDeclaration = 75, RULE_identifier = 76, RULE_localTypeDeclaration = 77, 
+		RULE_statement = 78, RULE_catchClause = 79, RULE_catchType = 80, RULE_finallyBlock = 81, 
+		RULE_resourceSpecification = 82, RULE_resources = 83, RULE_resource = 84, 
+		RULE_switchBlockStatementGroup = 85, RULE_switchLabel = 86, RULE_forControl = 87, 
+		RULE_forInit = 88, RULE_enhancedForControl = 89, RULE_parExpression = 90, 
+		RULE_expressionList = 91, RULE_methodCall = 92, RULE_expression = 93, 
+		RULE_pattern = 94, RULE_lambdaExpression = 95, RULE_lambdaParameters = 96, 
+		RULE_lambdaBody = 97, RULE_primary = 98, RULE_switchExpression = 99, RULE_switchLabeledRule = 100, 
+		RULE_guardedPattern = 101, RULE_switchRuleOutcome = 102, RULE_classType = 103, 
+		RULE_creator = 104, RULE_createdName = 105, RULE_innerCreator = 106, RULE_arrayCreatorRest = 107, 
+		RULE_classCreatorRest = 108, RULE_explicitGenericInvocation = 109, RULE_typeArgumentsOrDiamond = 110, 
+		RULE_nonWildcardTypeArgumentsOrDiamond = 111, RULE_nonWildcardTypeArguments = 112, 
+		RULE_typeList = 113, RULE_typeType = 114, RULE_primitiveType = 115, RULE_typeArguments = 116, 
 		RULE_superSuffix = 117, RULE_explicitGenericInvocationSuffix = 118, RULE_arguments = 119;
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"compilationUnit", "packageDeclaration", "importDeclaration", "typeDeclaration",
-			"modifier", "classOrInterfaceModifier", "variableModifier", "classDeclaration",
-			"typeParameters", "typeParameter", "typeBound", "enumDeclaration", "enumConstants",
-			"enumConstant", "enumBodyDeclarations", "interfaceDeclaration", "classBody",
-			"interfaceBody", "classBodyDeclaration", "memberDeclaration", "methodDeclaration",
-			"methodBody", "typeTypeOrVoid", "genericMethodDeclaration", "genericConstructorDeclaration",
-			"constructorDeclaration", "fieldDeclaration", "interfaceBodyDeclaration",
-			"interfaceMemberDeclaration", "constDeclaration", "constantDeclarator",
-			"interfaceMethodDeclaration", "interfaceMethodModifier", "genericInterfaceMethodDeclaration",
-			"interfaceCommonBodyDeclaration", "variableDeclarators", "variableDeclarator",
-			"variableDeclaratorId", "variableInitializer", "arrayInitializer", "classOrInterfaceType",
-			"typeArgument", "qualifiedNameList", "formalParameters", "receiverParameter",
-			"formalParameterList", "formalParameter", "lastFormalParameter", "lambdaLVTIList",
-			"lambdaLVTIParameter", "qualifiedName", "literal", "integerLiteral",
-			"floatLiteral", "altAnnotationQualifiedName", "annotation", "elementValuePairs",
-			"elementValuePair", "elementValue", "elementValueArrayInitializer", "annotationTypeDeclaration",
-			"annotationTypeBody", "annotationTypeElementDeclaration", "annotationTypeElementRest",
-			"annotationMethodOrConstantRest", "annotationMethodRest", "annotationConstantRest",
-			"defaultValue", "recordDeclaration", "recordHeader", "recordComponentList",
-			"recordComponent", "recordBody", "block", "blockStatement", "localVariableDeclaration",
-			"identifier", "localTypeDeclaration", "statement", "catchClause", "catchType",
-			"finallyBlock", "resourceSpecification", "resources", "resource", "switchBlockStatementGroup",
-			"switchLabel", "forControl", "forInit", "enhancedForControl", "parExpression",
-			"expressionList", "methodCall", "expression", "pattern", "lambdaExpression",
-			"lambdaParameters", "lambdaBody", "primary", "switchExpression", "switchLabeledRule",
-			"guardedPattern", "switchRuleOutcome", "classType", "creator", "createdName",
-			"innerCreator", "arrayCreatorRest", "classCreatorRest", "explicitGenericInvocation",
-			"typeArgumentsOrDiamond", "nonWildcardTypeArgumentsOrDiamond", "nonWildcardTypeArguments",
-			"typeList", "typeType", "primitiveType", "typeArguments", "superSuffix",
+			"compilationUnit", "packageDeclaration", "importDeclaration", "typeDeclaration", 
+			"modifier", "classOrInterfaceModifier", "variableModifier", "classDeclaration", 
+			"typeParameters", "typeParameter", "typeBound", "enumDeclaration", "enumConstants", 
+			"enumConstant", "enumBodyDeclarations", "interfaceDeclaration", "classBody", 
+			"interfaceBody", "classBodyDeclaration", "memberDeclaration", "methodDeclaration", 
+			"methodBody", "typeTypeOrVoid", "genericMethodDeclaration", "genericConstructorDeclaration", 
+			"constructorDeclaration", "fieldDeclaration", "interfaceBodyDeclaration", 
+			"interfaceMemberDeclaration", "constDeclaration", "constantDeclarator", 
+			"interfaceMethodDeclaration", "interfaceMethodModifier", "genericInterfaceMethodDeclaration", 
+			"interfaceCommonBodyDeclaration", "variableDeclarators", "variableDeclarator", 
+			"variableDeclaratorId", "variableInitializer", "arrayInitializer", "classOrInterfaceType", 
+			"typeArgument", "qualifiedNameList", "formalParameters", "receiverParameter", 
+			"formalParameterList", "formalParameter", "lastFormalParameter", "lambdaLVTIList", 
+			"lambdaLVTIParameter", "qualifiedName", "literal", "integerLiteral", 
+			"floatLiteral", "altAnnotationQualifiedName", "annotation", "elementValuePairs", 
+			"elementValuePair", "elementValue", "elementValueArrayInitializer", "annotationTypeDeclaration", 
+			"annotationTypeBody", "annotationTypeElementDeclaration", "annotationTypeElementRest", 
+			"annotationMethodOrConstantRest", "annotationMethodRest", "annotationConstantRest", 
+			"defaultValue", "recordDeclaration", "recordHeader", "recordComponentList", 
+			"recordComponent", "recordBody", "block", "blockStatement", "localVariableDeclaration", 
+			"identifier", "localTypeDeclaration", "statement", "catchClause", "catchType", 
+			"finallyBlock", "resourceSpecification", "resources", "resource", "switchBlockStatementGroup", 
+			"switchLabel", "forControl", "forInit", "enhancedForControl", "parExpression", 
+			"expressionList", "methodCall", "expression", "pattern", "lambdaExpression", 
+			"lambdaParameters", "lambdaBody", "primary", "switchExpression", "switchLabeledRule", 
+			"guardedPattern", "switchRuleOutcome", "classType", "creator", "createdName", 
+			"innerCreator", "arrayCreatorRest", "classCreatorRest", "explicitGenericInvocation", 
+			"typeArgumentsOrDiamond", "nonWildcardTypeArgumentsOrDiamond", "nonWildcardTypeArguments", 
+			"typeList", "typeType", "primitiveType", "typeArguments", "superSuffix", 
 			"explicitGenericInvocationSuffix", "arguments"
 		};
 	}
@@ -117,44 +118,44 @@ public class leftNut extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'abstract'", "'assert'", "'boolean'", "'break'", "'byte'", "'case'",
-			"'catch'", "'char'", "'class'", "'const'", "'continue'", "'default'",
-			"'do'", "'double'", "'else'", "'enum'", "'extends'", "'final'", "'finally'",
-			"'float'", "'for'", "'if'", "'goto'", "'implements'", "'import'", "'instanceof'",
-			"'int'", "'interface'", "'long'", "'native'", "'new'", "'package'", "'private'",
-			"'protected'", "'public'", "'return'", "'short'", "'static'", "'strictfp'",
-			"'super'", "'switch'", "'synchronized'", "'this'", "'throw'", "'throws'",
-			"'transient'", "'try'", "'void'", "'volatile'", "'while'", "'var'", "'yield'",
-			"'record'", "'sealed'", "'permits'", "'non-sealed'", null, null, null,
-			null, null, null, null, null, null, null, "'null'", "'('", "')'", "'{'",
-			"'}'", "'['", "']'", "';'", "','", "'.'", "'='", "'>'", "'<'", "'!'",
-			"'~'", "'?'", "':'", "'=='", "'<='", "'>='", "'!='", "'&&'", "'||'",
-			"'++'", "'--'", "'+'", "'-'", "'*'", "'/'", "'&'", "'|'", "'^'", "'%'",
-			"'+='", "'-='", "'*='", "'/='", "'&='", "'|='", "'^='", "'%='", "'<<='",
+			null, "'abstract'", "'assert'", "'boolean'", "'break'", "'byte'", "'case'", 
+			"'catch'", "'char'", "'class'", "'const'", "'continue'", "'default'", 
+			"'do'", "'double'", "'else'", "'enum'", "'extends'", "'final'", "'finally'", 
+			"'float'", "'for'", "'if'", "'goto'", "'implements'", "'import'", "'instanceof'", 
+			"'int'", "'interface'", "'long'", "'native'", "'new'", "'package'", "'private'", 
+			"'protected'", "'public'", "'return'", "'short'", "'static'", "'strictfp'", 
+			"'super'", "'switch'", "'synchronized'", "'this'", "'throw'", "'throws'", 
+			"'transient'", "'try'", "'void'", "'volatile'", "'while'", "'var'", "'yield'", 
+			"'record'", "'sealed'", "'permits'", "'non-sealed'", null, null, null, 
+			null, null, null, null, null, null, null, "'null'", "'('", "')'", "'{'", 
+			"'}'", "'['", "']'", "';'", "','", "'.'", "'='", "'>'", "'<'", "'!'", 
+			"'~'", "'?'", "':'", "'=='", "'<='", "'>='", "'!='", "'&&'", "'||'", 
+			"'++'", "'--'", "'+'", "'-'", "'*'", "'/'", "'&'", "'|'", "'^'", "'%'", 
+			"'+='", "'-='", "'*='", "'/='", "'&='", "'|='", "'^='", "'%='", "'<<='", 
 			"'>>='", "'>>>='", "'->'", "'::'", "'@'", "'...'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "ABSTRACT", "ASSERT", "BOOLEAN", "BREAK", "BYTE", "CASE", "CATCH",
-			"CHAR", "CLASS", "CONST", "CONTINUE", "DEFAULT", "DO", "DOUBLE", "ELSE",
-			"ENUM", "EXTENDS", "FINAL", "FINALLY", "FLOAT", "FOR", "IF", "GOTO",
-			"IMPLEMENTS", "IMPORT", "INSTANCEOF", "INT", "INTERFACE", "LONG", "NATIVE",
-			"NEW", "PACKAGE", "PRIVATE", "PROTECTED", "PUBLIC", "RETURN", "SHORT",
-			"STATIC", "STRICTFP", "SUPER", "SWITCH", "SYNCHRONIZED", "THIS", "THROW",
-			"THROWS", "TRANSIENT", "TRY", "VOID", "VOLATILE", "WHILE", "VAR", "YIELD",
-			"RECORD", "SEALED", "PERMITS", "NON_SEALED", "DECIMAL_LITERAL", "HEX_LITERAL",
-			"OCT_LITERAL", "BINARY_LITERAL", "FLOAT_LITERAL", "HEX_FLOAT_LITERAL",
-			"BOOL_LITERAL", "CHAR_LITERAL", "STRING_LITERAL", "TEXT_BLOCK", "NULL_LITERAL",
-			"LPAREN", "RPAREN", "LBRACE", "RBRACE", "LBRACK", "RBRACK", "SEMI", "COMMA",
-			"DOT", "ASSIGN", "GT", "LT", "BANG", "TILDE", "QUESTION", "COLON", "EQUAL",
-			"LE", "GE", "NOTEQUAL", "AND", "OR", "INC", "DEC", "ADD", "SUB", "MUL",
-			"DIV", "BITAND", "BITOR", "CARET", "MOD", "ADD_ASSIGN", "SUB_ASSIGN",
-			"MUL_ASSIGN", "DIV_ASSIGN", "AND_ASSIGN", "OR_ASSIGN", "XOR_ASSIGN",
-			"MOD_ASSIGN", "LSHIFT_ASSIGN", "RSHIFT_ASSIGN", "URSHIFT_ASSIGN", "ARROW",
-			"COLONCOLON", "AT", "ELLIPSIS", "WS", "COMMENT", "LINE_COMMENT", "IDENTIFIER",
-			"OPEN", "REQUIRES", "EXPORTS", "OPENS", "TO", "USES", "PROVIDES", "WITH",
+			null, "ABSTRACT", "ASSERT", "BOOLEAN", "BREAK", "BYTE", "CASE", "CATCH", 
+			"CHAR", "CLASS", "CONST", "CONTINUE", "DEFAULT", "DO", "DOUBLE", "ELSE", 
+			"ENUM", "EXTENDS", "FINAL", "FINALLY", "FLOAT", "FOR", "IF", "GOTO", 
+			"IMPLEMENTS", "IMPORT", "INSTANCEOF", "INT", "INTERFACE", "LONG", "NATIVE", 
+			"NEW", "PACKAGE", "PRIVATE", "PROTECTED", "PUBLIC", "RETURN", "SHORT", 
+			"STATIC", "STRICTFP", "SUPER", "SWITCH", "SYNCHRONIZED", "THIS", "THROW", 
+			"THROWS", "TRANSIENT", "TRY", "VOID", "VOLATILE", "WHILE", "VAR", "YIELD", 
+			"RECORD", "SEALED", "PERMITS", "NON_SEALED", "DECIMAL_LITERAL", "HEX_LITERAL", 
+			"OCT_LITERAL", "BINARY_LITERAL", "FLOAT_LITERAL", "HEX_FLOAT_LITERAL", 
+			"BOOL_LITERAL", "CHAR_LITERAL", "STRING_LITERAL", "TEXT_BLOCK", "NULL_LITERAL", 
+			"LPAREN", "RPAREN", "LBRACE", "RBRACE", "LBRACK", "RBRACK", "SEMI", "COMMA", 
+			"DOT", "ASSIGN", "GT", "LT", "BANG", "TILDE", "QUESTION", "COLON", "EQUAL", 
+			"LE", "GE", "NOTEQUAL", "AND", "OR", "INC", "DEC", "ADD", "SUB", "MUL", 
+			"DIV", "BITAND", "BITOR", "CARET", "MOD", "ADD_ASSIGN", "SUB_ASSIGN", 
+			"MUL_ASSIGN", "DIV_ASSIGN", "AND_ASSIGN", "OR_ASSIGN", "XOR_ASSIGN", 
+			"MOD_ASSIGN", "LSHIFT_ASSIGN", "RSHIFT_ASSIGN", "URSHIFT_ASSIGN", "ARROW", 
+			"COLONCOLON", "AT", "ELLIPSIS", "WS", "COMMENT", "LINE_COMMENT", "IDENTIFIER", 
+			"OPEN", "REQUIRES", "EXPORTS", "OPENS", "TO", "USES", "PROVIDES", "WITH", 
 			"TRANSITIVE"
 		};
 	}
@@ -193,7 +194,7 @@ public class leftNut extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "leftNut.g4"; }
+	public String getGrammarFileName() { return "JustParser.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -204,7 +205,7 @@ public class leftNut extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public leftNut(TokenStream input) {
+	public JustParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -237,16 +238,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_compilationUnit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterCompilationUnit(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCompilationUnit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitCompilationUnit(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitCompilationUnit(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCompilationUnit(this);
 		}
 	}
 
@@ -292,7 +288,7 @@ public class leftNut extends Parser {
 					setState(249);
 					typeDeclaration();
 					}
-					}
+					} 
 				}
 				setState(254);
 				_errHandler.sync(this);
@@ -326,11 +322,11 @@ public class leftNut extends Parser {
 	}
 
 	public static class PackageDeclarationContext extends ParserRuleContext {
-		public TerminalNode PACKAGE() { return getToken(leftNut.PACKAGE, 0); }
+		public TerminalNode PACKAGE() { return getToken(JustParser.PACKAGE, 0); }
 		public QualifiedNameContext qualifiedName() {
 			return getRuleContext(QualifiedNameContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
@@ -343,16 +339,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_packageDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterPackageDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPackageDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitPackageDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitPackageDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPackageDeclaration(this);
 		}
 	}
 
@@ -397,30 +388,25 @@ public class leftNut extends Parser {
 	}
 
 	public static class ImportDeclarationContext extends ParserRuleContext {
-		public TerminalNode IMPORT() { return getToken(leftNut.IMPORT, 0); }
+		public TerminalNode IMPORT() { return getToken(JustParser.IMPORT, 0); }
 		public QualifiedNameContext qualifiedName() {
 			return getRuleContext(QualifiedNameContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
-		public TerminalNode STATIC() { return getToken(leftNut.STATIC, 0); }
-		public TerminalNode DOT() { return getToken(leftNut.DOT, 0); }
-		public TerminalNode MUL() { return getToken(leftNut.MUL, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
+		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
+		public TerminalNode MUL() { return getToken(JustParser.MUL, 0); }
 		public ImportDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_importDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterImportDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterImportDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitImportDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitImportDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitImportDeclaration(this);
 		}
 	}
 
@@ -494,23 +480,18 @@ public class leftNut extends Parser {
 		public ClassOrInterfaceModifierContext classOrInterfaceModifier(int i) {
 			return getRuleContext(ClassOrInterfaceModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public TypeDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeDeclaration(this);
 		}
 	}
 
@@ -561,7 +542,7 @@ public class leftNut extends Parser {
 						setState(282);
 						classOrInterfaceModifier();
 						}
-						}
+						} 
 					}
 					setState(287);
 					_errHandler.sync(this);
@@ -631,26 +612,21 @@ public class leftNut extends Parser {
 		public ClassOrInterfaceModifierContext classOrInterfaceModifier() {
 			return getRuleContext(ClassOrInterfaceModifierContext.class,0);
 		}
-		public TerminalNode NATIVE() { return getToken(leftNut.NATIVE, 0); }
-		public TerminalNode SYNCHRONIZED() { return getToken(leftNut.SYNCHRONIZED, 0); }
-		public TerminalNode TRANSIENT() { return getToken(leftNut.TRANSIENT, 0); }
-		public TerminalNode VOLATILE() { return getToken(leftNut.VOLATILE, 0); }
+		public TerminalNode NATIVE() { return getToken(JustParser.NATIVE, 0); }
+		public TerminalNode SYNCHRONIZED() { return getToken(JustParser.SYNCHRONIZED, 0); }
+		public TerminalNode TRANSIENT() { return getToken(JustParser.TRANSIENT, 0); }
+		public TerminalNode VOLATILE() { return getToken(JustParser.VOLATILE, 0); }
 		public ModifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_modifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterModifier(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitModifier(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitModifier(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitModifier(this);
 		}
 	}
 
@@ -738,31 +714,26 @@ public class leftNut extends Parser {
 		public AnnotationContext annotation() {
 			return getRuleContext(AnnotationContext.class,0);
 		}
-		public TerminalNode PUBLIC() { return getToken(leftNut.PUBLIC, 0); }
-		public TerminalNode PROTECTED() { return getToken(leftNut.PROTECTED, 0); }
-		public TerminalNode PRIVATE() { return getToken(leftNut.PRIVATE, 0); }
-		public TerminalNode STATIC() { return getToken(leftNut.STATIC, 0); }
-		public TerminalNode ABSTRACT() { return getToken(leftNut.ABSTRACT, 0); }
-		public TerminalNode FINAL() { return getToken(leftNut.FINAL, 0); }
-		public TerminalNode STRICTFP() { return getToken(leftNut.STRICTFP, 0); }
-		public TerminalNode SEALED() { return getToken(leftNut.SEALED, 0); }
-		public TerminalNode NON_SEALED() { return getToken(leftNut.NON_SEALED, 0); }
+		public TerminalNode PUBLIC() { return getToken(JustParser.PUBLIC, 0); }
+		public TerminalNode PROTECTED() { return getToken(JustParser.PROTECTED, 0); }
+		public TerminalNode PRIVATE() { return getToken(JustParser.PRIVATE, 0); }
+		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
+		public TerminalNode ABSTRACT() { return getToken(JustParser.ABSTRACT, 0); }
+		public TerminalNode FINAL() { return getToken(JustParser.FINAL, 0); }
+		public TerminalNode STRICTFP() { return getToken(JustParser.STRICTFP, 0); }
+		public TerminalNode SEALED() { return getToken(JustParser.SEALED, 0); }
+		public TerminalNode NON_SEALED() { return getToken(JustParser.NON_SEALED, 0); }
 		public ClassOrInterfaceModifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classOrInterfaceModifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterClassOrInterfaceModifier(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassOrInterfaceModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitClassOrInterfaceModifier(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitClassOrInterfaceModifier(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassOrInterfaceModifier(this);
 		}
 	}
 
@@ -857,7 +828,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class VariableModifierContext extends ParserRuleContext {
-		public TerminalNode FINAL() { return getToken(leftNut.FINAL, 0); }
+		public TerminalNode FINAL() { return getToken(JustParser.FINAL, 0); }
 		public AnnotationContext annotation() {
 			return getRuleContext(AnnotationContext.class,0);
 		}
@@ -867,16 +838,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableModifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterVariableModifier(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitVariableModifier(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitVariableModifier(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableModifier(this);
 		}
 	}
 
@@ -932,7 +898,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class ClassDeclarationContext extends ParserRuleContext {
-		public TerminalNode CLASS() { return getToken(leftNut.CLASS, 0); }
+		public TerminalNode CLASS() { return getToken(JustParser.CLASS, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -942,34 +908,29 @@ public class leftNut extends Parser {
 		public TypeParametersContext typeParameters() {
 			return getRuleContext(TypeParametersContext.class,0);
 		}
-		public TerminalNode EXTENDS() { return getToken(leftNut.EXTENDS, 0); }
+		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode IMPLEMENTS() { return getToken(leftNut.IMPLEMENTS, 0); }
+		public TerminalNode IMPLEMENTS() { return getToken(JustParser.IMPLEMENTS, 0); }
 		public List<TypeListContext> typeList() {
 			return getRuleContexts(TypeListContext.class);
 		}
 		public TypeListContext typeList(int i) {
 			return getRuleContext(TypeListContext.class,i);
 		}
-		public TerminalNode PERMITS() { return getToken(leftNut.PERMITS, 0); }
+		public TerminalNode PERMITS() { return getToken(JustParser.PERMITS, 0); }
 		public ClassDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterClassDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitClassDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitClassDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassDeclaration(this);
 		}
 	}
 
@@ -1046,17 +1007,17 @@ public class leftNut extends Parser {
 	}
 
 	public static class TypeParametersContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(leftNut.LT, 0); }
+		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
 		public List<TypeParameterContext> typeParameter() {
 			return getRuleContexts(TypeParameterContext.class);
 		}
 		public TypeParameterContext typeParameter(int i) {
 			return getRuleContext(TypeParameterContext.class,i);
 		}
-		public TerminalNode GT() { return getToken(leftNut.GT, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public TypeParametersContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1064,16 +1025,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeParameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeParameters(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeParameters(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeParameters(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeParameters(this);
 		}
 	}
 
@@ -1129,7 +1085,7 @@ public class leftNut extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public TerminalNode EXTENDS() { return getToken(leftNut.EXTENDS, 0); }
+		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
 		public TypeBoundContext typeBound() {
 			return getRuleContext(TypeBoundContext.class,0);
 		}
@@ -1139,16 +1095,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeParameter(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeParameter(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeParameter(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeParameter(this);
 		}
 	}
 
@@ -1170,7 +1121,7 @@ public class leftNut extends Parser {
 					setState(351);
 					annotation();
 					}
-					}
+					} 
 				}
 				setState(356);
 				_errHandler.sync(this);
@@ -1195,7 +1146,7 @@ public class leftNut extends Parser {
 						setState(359);
 						annotation();
 						}
-						}
+						} 
 					}
 					setState(364);
 					_errHandler.sync(this);
@@ -1226,9 +1177,9 @@ public class leftNut extends Parser {
 		public TypeTypeContext typeType(int i) {
 			return getRuleContext(TypeTypeContext.class,i);
 		}
-		public List<TerminalNode> BITAND() { return getTokens(leftNut.BITAND); }
+		public List<TerminalNode> BITAND() { return getTokens(JustParser.BITAND); }
 		public TerminalNode BITAND(int i) {
-			return getToken(leftNut.BITAND, i);
+			return getToken(JustParser.BITAND, i);
 		}
 		public TypeBoundContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1236,16 +1187,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeBound; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeBound(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeBound(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeBound(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeBound(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeBound(this);
 		}
 	}
 
@@ -1288,20 +1234,20 @@ public class leftNut extends Parser {
 	}
 
 	public static class EnumDeclarationContext extends ParserRuleContext {
-		public TerminalNode ENUM() { return getToken(leftNut.ENUM, 0); }
+		public TerminalNode ENUM() { return getToken(JustParser.ENUM, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
-		public TerminalNode IMPLEMENTS() { return getToken(leftNut.IMPLEMENTS, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode IMPLEMENTS() { return getToken(JustParser.IMPLEMENTS, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
 		public EnumConstantsContext enumConstants() {
 			return getRuleContext(EnumConstantsContext.class,0);
 		}
-		public TerminalNode COMMA() { return getToken(leftNut.COMMA, 0); }
+		public TerminalNode COMMA() { return getToken(JustParser.COMMA, 0); }
 		public EnumBodyDeclarationsContext enumBodyDeclarations() {
 			return getRuleContext(EnumBodyDeclarationsContext.class,0);
 		}
@@ -1311,16 +1257,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterEnumDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitEnumDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitEnumDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumDeclaration(this);
 		}
 	}
 
@@ -1401,9 +1342,9 @@ public class leftNut extends Parser {
 		public EnumConstantContext enumConstant(int i) {
 			return getRuleContext(EnumConstantContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public EnumConstantsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1411,16 +1352,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumConstants; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterEnumConstants(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumConstants(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitEnumConstants(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitEnumConstants(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumConstants(this);
 		}
 	}
 
@@ -1445,7 +1381,7 @@ public class leftNut extends Parser {
 					setState(396);
 					enumConstant();
 					}
-					}
+					} 
 				}
 				setState(401);
 				_errHandler.sync(this);
@@ -1486,16 +1422,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumConstant; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterEnumConstant(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumConstant(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitEnumConstant(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitEnumConstant(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumConstant(this);
 		}
 	}
 
@@ -1517,7 +1448,7 @@ public class leftNut extends Parser {
 					setState(402);
 					annotation();
 					}
-					}
+					} 
 				}
 				setState(407);
 				_errHandler.sync(this);
@@ -1559,7 +1490,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class EnumBodyDeclarationsContext extends ParserRuleContext {
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public List<ClassBodyDeclarationContext> classBodyDeclaration() {
 			return getRuleContexts(ClassBodyDeclarationContext.class);
 		}
@@ -1572,16 +1503,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumBodyDeclarations; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterEnumBodyDeclarations(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumBodyDeclarations(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitEnumBodyDeclarations(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitEnumBodyDeclarations(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumBodyDeclarations(this);
 		}
 	}
 
@@ -1622,7 +1548,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class InterfaceDeclarationContext extends ParserRuleContext {
-		public TerminalNode INTERFACE() { return getToken(leftNut.INTERFACE, 0); }
+		public TerminalNode INTERFACE() { return getToken(JustParser.INTERFACE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -1632,7 +1558,7 @@ public class leftNut extends Parser {
 		public TypeParametersContext typeParameters() {
 			return getRuleContext(TypeParametersContext.class,0);
 		}
-		public TerminalNode EXTENDS() { return getToken(leftNut.EXTENDS, 0); }
+		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
@@ -1642,16 +1568,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInterfaceDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInterfaceDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInterfaceDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceDeclaration(this);
 		}
 	}
 
@@ -1704,8 +1625,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class ClassBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<ClassBodyDeclarationContext> classBodyDeclaration() {
 			return getRuleContexts(ClassBodyDeclarationContext.class);
 		}
@@ -1718,16 +1639,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_classBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterClassBody(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitClassBody(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitClassBody(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassBody(this);
 		}
 	}
 
@@ -1770,8 +1686,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class InterfaceBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<InterfaceBodyDeclarationContext> interfaceBodyDeclaration() {
 			return getRuleContexts(InterfaceBodyDeclarationContext.class);
 		}
@@ -1784,16 +1700,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInterfaceBody(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInterfaceBody(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInterfaceBody(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceBody(this);
 		}
 	}
 
@@ -1836,11 +1747,11 @@ public class leftNut extends Parser {
 	}
 
 	public static class ClassBodyDeclarationContext extends ParserRuleContext {
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode STATIC() { return getToken(leftNut.STATIC, 0); }
+		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
 		public MemberDeclarationContext memberDeclaration() {
 			return getRuleContext(MemberDeclarationContext.class,0);
 		}
@@ -1856,16 +1767,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_classBodyDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterClassBodyDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassBodyDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitClassBodyDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitClassBodyDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassBodyDeclaration(this);
 		}
 	}
 
@@ -1915,7 +1821,7 @@ public class leftNut extends Parser {
 						setState(456);
 						modifier();
 						}
-						}
+						} 
 					}
 					setState(461);
 					_errHandler.sync(this);
@@ -1975,16 +1881,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_memberDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterMemberDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMemberDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitMemberDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitMemberDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMemberDeclaration(this);
 		}
 	}
 
@@ -2091,15 +1992,15 @@ public class leftNut extends Parser {
 		public MethodBodyContext methodBody() {
 			return getRuleContext(MethodBodyContext.class,0);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(leftNut.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(leftNut.LBRACK, i);
+			return getToken(JustParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(leftNut.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(leftNut.RBRACK, i);
+			return getToken(JustParser.RBRACK, i);
 		}
-		public TerminalNode THROWS() { return getToken(leftNut.THROWS, 0); }
+		public TerminalNode THROWS() { return getToken(JustParser.THROWS, 0); }
 		public QualifiedNameListContext qualifiedNameList() {
 			return getRuleContext(QualifiedNameListContext.class,0);
 		}
@@ -2109,16 +2010,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_methodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterMethodDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitMethodDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitMethodDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMethodDeclaration(this);
 		}
 	}
 
@@ -2182,23 +2078,18 @@ public class leftNut extends Parser {
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public MethodBodyContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_methodBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterMethodBody(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMethodBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitMethodBody(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitMethodBody(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMethodBody(this);
 		}
 	}
 
@@ -2242,23 +2133,18 @@ public class leftNut extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode VOID() { return getToken(leftNut.VOID, 0); }
+		public TerminalNode VOID() { return getToken(JustParser.VOID, 0); }
 		public TypeTypeOrVoidContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeTypeOrVoid; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeTypeOrVoid(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeTypeOrVoid(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeTypeOrVoid(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeTypeOrVoid(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeTypeOrVoid(this);
 		}
 	}
 
@@ -2335,16 +2221,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_genericMethodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterGenericMethodDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGenericMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitGenericMethodDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitGenericMethodDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGenericMethodDeclaration(this);
 		}
 	}
 
@@ -2384,16 +2265,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_genericConstructorDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterGenericConstructorDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGenericConstructorDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitGenericConstructorDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitGenericConstructorDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGenericConstructorDeclaration(this);
 		}
 	}
 
@@ -2431,7 +2307,7 @@ public class leftNut extends Parser {
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode THROWS() { return getToken(leftNut.THROWS, 0); }
+		public TerminalNode THROWS() { return getToken(JustParser.THROWS, 0); }
 		public QualifiedNameListContext qualifiedNameList() {
 			return getRuleContext(QualifiedNameListContext.class,0);
 		}
@@ -2441,16 +2317,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_constructorDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterConstructorDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterConstructorDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitConstructorDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitConstructorDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitConstructorDeclaration(this);
 		}
 	}
 
@@ -2499,23 +2370,18 @@ public class leftNut extends Parser {
 		public VariableDeclaratorsContext variableDeclarators() {
 			return getRuleContext(VariableDeclaratorsContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public FieldDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_fieldDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterFieldDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFieldDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitFieldDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitFieldDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFieldDeclaration(this);
 		}
 	}
 
@@ -2554,23 +2420,18 @@ public class leftNut extends Parser {
 		public ModifierContext modifier(int i) {
 			return getRuleContext(ModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public InterfaceBodyDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceBodyDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInterfaceBodyDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceBodyDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInterfaceBodyDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInterfaceBodyDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceBodyDeclaration(this);
 		}
 	}
 
@@ -2637,7 +2498,7 @@ public class leftNut extends Parser {
 						setState(519);
 						modifier();
 						}
-						}
+						} 
 					}
 					setState(524);
 					_errHandler.sync(this);
@@ -2700,16 +2561,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceMemberDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInterfaceMemberDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceMemberDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInterfaceMemberDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInterfaceMemberDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceMemberDeclaration(this);
 		}
 	}
 
@@ -2799,10 +2655,10 @@ public class leftNut extends Parser {
 		public ConstantDeclaratorContext constantDeclarator(int i) {
 			return getRuleContext(ConstantDeclaratorContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public ConstDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2810,16 +2666,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_constDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterConstDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterConstDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitConstDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitConstDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitConstDeclaration(this);
 		}
 	}
 
@@ -2869,17 +2720,17 @@ public class leftNut extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(leftNut.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
 		public VariableInitializerContext variableInitializer() {
 			return getRuleContext(VariableInitializerContext.class,0);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(leftNut.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(leftNut.LBRACK, i);
+			return getToken(JustParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(leftNut.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(leftNut.RBRACK, i);
+			return getToken(JustParser.RBRACK, i);
 		}
 		public ConstantDeclaratorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2887,16 +2738,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_constantDeclarator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterConstantDeclarator(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterConstantDeclarator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitConstantDeclarator(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitConstantDeclarator(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitConstantDeclarator(this);
 		}
 	}
 
@@ -2958,16 +2804,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceMethodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInterfaceMethodDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInterfaceMethodDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInterfaceMethodDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceMethodDeclaration(this);
 		}
 	}
 
@@ -2988,7 +2829,7 @@ public class leftNut extends Parser {
 					setState(561);
 					interfaceMethodModifier();
 					}
-					}
+					} 
 				}
 				setState(566);
 				_errHandler.sync(this);
@@ -3013,27 +2854,22 @@ public class leftNut extends Parser {
 		public AnnotationContext annotation() {
 			return getRuleContext(AnnotationContext.class,0);
 		}
-		public TerminalNode PUBLIC() { return getToken(leftNut.PUBLIC, 0); }
-		public TerminalNode ABSTRACT() { return getToken(leftNut.ABSTRACT, 0); }
-		public TerminalNode DEFAULT() { return getToken(leftNut.DEFAULT, 0); }
-		public TerminalNode STATIC() { return getToken(leftNut.STATIC, 0); }
-		public TerminalNode STRICTFP() { return getToken(leftNut.STRICTFP, 0); }
+		public TerminalNode PUBLIC() { return getToken(JustParser.PUBLIC, 0); }
+		public TerminalNode ABSTRACT() { return getToken(JustParser.ABSTRACT, 0); }
+		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
+		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
+		public TerminalNode STRICTFP() { return getToken(JustParser.STRICTFP, 0); }
 		public InterfaceMethodModifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceMethodModifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInterfaceMethodModifier(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceMethodModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInterfaceMethodModifier(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInterfaceMethodModifier(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceMethodModifier(this);
 		}
 	}
 
@@ -3135,16 +2971,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_genericInterfaceMethodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterGenericInterfaceMethodDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGenericInterfaceMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitGenericInterfaceMethodDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitGenericInterfaceMethodDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGenericInterfaceMethodDeclaration(this);
 		}
 	}
 
@@ -3205,15 +3036,15 @@ public class leftNut extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(leftNut.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(leftNut.LBRACK, i);
+			return getToken(JustParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(leftNut.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(leftNut.RBRACK, i);
+			return getToken(JustParser.RBRACK, i);
 		}
-		public TerminalNode THROWS() { return getToken(leftNut.THROWS, 0); }
+		public TerminalNode THROWS() { return getToken(JustParser.THROWS, 0); }
 		public QualifiedNameListContext qualifiedNameList() {
 			return getRuleContext(QualifiedNameListContext.class,0);
 		}
@@ -3223,16 +3054,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceCommonBodyDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInterfaceCommonBodyDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceCommonBodyDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInterfaceCommonBodyDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInterfaceCommonBodyDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceCommonBodyDeclaration(this);
 		}
 	}
 
@@ -3254,7 +3080,7 @@ public class leftNut extends Parser {
 					setState(586);
 					annotation();
 					}
-					}
+					} 
 				}
 				setState(591);
 				_errHandler.sync(this);
@@ -3316,9 +3142,9 @@ public class leftNut extends Parser {
 		public VariableDeclaratorContext variableDeclarator(int i) {
 			return getRuleContext(VariableDeclaratorContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public VariableDeclaratorsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3326,16 +3152,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableDeclarators; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterVariableDeclarators(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableDeclarators(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitVariableDeclarators(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitVariableDeclarators(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableDeclarators(this);
 		}
 	}
 
@@ -3381,7 +3202,7 @@ public class leftNut extends Parser {
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(leftNut.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
 		public VariableInitializerContext variableInitializer() {
 			return getRuleContext(VariableInitializerContext.class,0);
 		}
@@ -3391,16 +3212,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableDeclarator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterVariableDeclarator(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableDeclarator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitVariableDeclarator(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitVariableDeclarator(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableDeclarator(this);
 		}
 	}
 
@@ -3442,13 +3258,13 @@ public class leftNut extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(leftNut.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(leftNut.LBRACK, i);
+			return getToken(JustParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(leftNut.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(leftNut.RBRACK, i);
+			return getToken(JustParser.RBRACK, i);
 		}
 		public VariableDeclaratorIdContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3456,16 +3272,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableDeclaratorId; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterVariableDeclaratorId(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableDeclaratorId(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitVariableDeclaratorId(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitVariableDeclaratorId(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableDeclaratorId(this);
 		}
 	}
 
@@ -3520,16 +3331,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableInitializer; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterVariableInitializer(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableInitializer(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitVariableInitializer(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitVariableInitializer(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableInitializer(this);
 		}
 	}
 
@@ -3618,17 +3424,17 @@ public class leftNut extends Parser {
 	}
 
 	public static class ArrayInitializerContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<VariableInitializerContext> variableInitializer() {
 			return getRuleContexts(VariableInitializerContext.class);
 		}
 		public VariableInitializerContext variableInitializer(int i) {
 			return getRuleContext(VariableInitializerContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public ArrayInitializerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3636,16 +3442,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_arrayInitializer; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterArrayInitializer(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterArrayInitializer(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitArrayInitializer(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitArrayInitializer(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitArrayInitializer(this);
 		}
 	}
 
@@ -3678,7 +3479,7 @@ public class leftNut extends Parser {
 						setState(636);
 						variableInitializer();
 						}
-						}
+						} 
 					}
 					setState(641);
 					_errHandler.sync(this);
@@ -3725,9 +3526,9 @@ public class leftNut extends Parser {
 		public TypeArgumentsContext typeArguments(int i) {
 			return getRuleContext(TypeArgumentsContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(leftNut.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(leftNut.DOT, i);
+			return getToken(JustParser.DOT, i);
 		}
 		public ClassOrInterfaceTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3735,16 +3536,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_classOrInterfaceType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterClassOrInterfaceType(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassOrInterfaceType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitClassOrInterfaceType(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitClassOrInterfaceType(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassOrInterfaceType(this);
 		}
 	}
 
@@ -3789,7 +3585,7 @@ public class leftNut extends Parser {
 						break;
 					}
 					}
-					}
+					} 
 				}
 				setState(662);
 				_errHandler.sync(this);
@@ -3812,31 +3608,26 @@ public class leftNut extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode QUESTION() { return getToken(leftNut.QUESTION, 0); }
+		public TerminalNode QUESTION() { return getToken(JustParser.QUESTION, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public TerminalNode EXTENDS() { return getToken(leftNut.EXTENDS, 0); }
-		public TerminalNode SUPER() { return getToken(leftNut.SUPER, 0); }
+		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
+		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
 		public TypeArgumentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeArgument; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeArgument(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeArgument(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeArgument(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeArgument(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeArgument(this);
 		}
 	}
 
@@ -3916,9 +3707,9 @@ public class leftNut extends Parser {
 		public QualifiedNameContext qualifiedName(int i) {
 			return getRuleContext(QualifiedNameContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public QualifiedNameListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3926,16 +3717,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_qualifiedNameList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterQualifiedNameList(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterQualifiedNameList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitQualifiedNameList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitQualifiedNameList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitQualifiedNameList(this);
 		}
 	}
 
@@ -3978,12 +3764,12 @@ public class leftNut extends Parser {
 	}
 
 	public static class FormalParametersContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public ReceiverParameterContext receiverParameter() {
 			return getRuleContext(ReceiverParameterContext.class,0);
 		}
-		public TerminalNode COMMA() { return getToken(leftNut.COMMA, 0); }
+		public TerminalNode COMMA() { return getToken(JustParser.COMMA, 0); }
 		public FormalParameterListContext formalParameterList() {
 			return getRuleContext(FormalParameterListContext.class,0);
 		}
@@ -3993,16 +3779,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_formalParameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterFormalParameters(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFormalParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitFormalParameters(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitFormalParameters(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFormalParameters(this);
 		}
 	}
 
@@ -4084,16 +3865,16 @@ public class leftNut extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode THIS() { return getToken(leftNut.THIS, 0); }
+		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
 		}
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(leftNut.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(leftNut.DOT, i);
+			return getToken(JustParser.DOT, i);
 		}
 		public ReceiverParameterContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4101,16 +3882,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_receiverParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterReceiverParameter(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterReceiverParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitReceiverParameter(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitReceiverParameter(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitReceiverParameter(this);
 		}
 	}
 
@@ -4161,9 +3937,9 @@ public class leftNut extends Parser {
 		public FormalParameterContext formalParameter(int i) {
 			return getRuleContext(FormalParameterContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public LastFormalParameterContext lastFormalParameter() {
 			return getRuleContext(LastFormalParameterContext.class,0);
@@ -4174,16 +3950,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_formalParameterList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterFormalParameterList(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFormalParameterList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitFormalParameterList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitFormalParameterList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFormalParameterList(this);
 		}
 	}
 
@@ -4213,7 +3984,7 @@ public class leftNut extends Parser {
 						setState(714);
 						formalParameter();
 						}
-						}
+						} 
 					}
 					setState(719);
 					_errHandler.sync(this);
@@ -4272,16 +4043,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_formalParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterFormalParameter(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFormalParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitFormalParameter(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitFormalParameter(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFormalParameter(this);
 		}
 	}
 
@@ -4302,7 +4068,7 @@ public class leftNut extends Parser {
 					setState(727);
 					variableModifier();
 					}
-					}
+					} 
 				}
 				setState(732);
 				_errHandler.sync(this);
@@ -4329,7 +4095,7 @@ public class leftNut extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode ELLIPSIS() { return getToken(leftNut.ELLIPSIS, 0); }
+		public TerminalNode ELLIPSIS() { return getToken(JustParser.ELLIPSIS, 0); }
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
@@ -4351,16 +4117,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_lastFormalParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLastFormalParameter(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLastFormalParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLastFormalParameter(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLastFormalParameter(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLastFormalParameter(this);
 		}
 	}
 
@@ -4382,7 +4143,7 @@ public class leftNut extends Parser {
 					setState(736);
 					variableModifier();
 					}
-					}
+					} 
 				}
 				setState(741);
 				_errHandler.sync(this);
@@ -4428,9 +4189,9 @@ public class leftNut extends Parser {
 		public LambdaLVTIParameterContext lambdaLVTIParameter(int i) {
 			return getRuleContext(LambdaLVTIParameterContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public LambdaLVTIListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4438,16 +4199,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaLVTIList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLambdaLVTIList(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaLVTIList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLambdaLVTIList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLambdaLVTIList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaLVTIList(this);
 		}
 	}
 
@@ -4490,7 +4246,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class LambdaLVTIParameterContext extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(leftNut.VAR, 0); }
+		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -4506,16 +4262,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaLVTIParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLambdaLVTIParameter(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaLVTIParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLambdaLVTIParameter(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLambdaLVTIParameter(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaLVTIParameter(this);
 		}
 	}
 
@@ -4536,7 +4287,7 @@ public class leftNut extends Parser {
 					setState(760);
 					variableModifier();
 					}
-					}
+					} 
 				}
 				setState(765);
 				_errHandler.sync(this);
@@ -4566,9 +4317,9 @@ public class leftNut extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(leftNut.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(leftNut.DOT, i);
+			return getToken(JustParser.DOT, i);
 		}
 		public QualifiedNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4576,16 +4327,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_qualifiedName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterQualifiedName(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterQualifiedName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitQualifiedName(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitQualifiedName(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitQualifiedName(this);
 		}
 	}
 
@@ -4610,7 +4356,7 @@ public class leftNut extends Parser {
 					setState(771);
 					identifier();
 					}
-					}
+					} 
 				}
 				setState(776);
 				_errHandler.sync(this);
@@ -4636,27 +4382,22 @@ public class leftNut extends Parser {
 		public FloatLiteralContext floatLiteral() {
 			return getRuleContext(FloatLiteralContext.class,0);
 		}
-		public TerminalNode CHAR_LITERAL() { return getToken(leftNut.CHAR_LITERAL, 0); }
-		public TerminalNode STRING_LITERAL() { return getToken(leftNut.STRING_LITERAL, 0); }
-		public TerminalNode BOOL_LITERAL() { return getToken(leftNut.BOOL_LITERAL, 0); }
-		public TerminalNode NULL_LITERAL() { return getToken(leftNut.NULL_LITERAL, 0); }
-		public TerminalNode TEXT_BLOCK() { return getToken(leftNut.TEXT_BLOCK, 0); }
+		public TerminalNode CHAR_LITERAL() { return getToken(JustParser.CHAR_LITERAL, 0); }
+		public TerminalNode STRING_LITERAL() { return getToken(JustParser.STRING_LITERAL, 0); }
+		public TerminalNode BOOL_LITERAL() { return getToken(JustParser.BOOL_LITERAL, 0); }
+		public TerminalNode NULL_LITERAL() { return getToken(JustParser.NULL_LITERAL, 0); }
+		public TerminalNode TEXT_BLOCK() { return getToken(JustParser.TEXT_BLOCK, 0); }
 		public LiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLiteral(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLiteral(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLiteral(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLiteral(this);
 		}
 	}
 
@@ -4736,26 +4477,21 @@ public class leftNut extends Parser {
 	}
 
 	public static class IntegerLiteralContext extends ParserRuleContext {
-		public TerminalNode DECIMAL_LITERAL() { return getToken(leftNut.DECIMAL_LITERAL, 0); }
-		public TerminalNode HEX_LITERAL() { return getToken(leftNut.HEX_LITERAL, 0); }
-		public TerminalNode OCT_LITERAL() { return getToken(leftNut.OCT_LITERAL, 0); }
-		public TerminalNode BINARY_LITERAL() { return getToken(leftNut.BINARY_LITERAL, 0); }
+		public TerminalNode DECIMAL_LITERAL() { return getToken(JustParser.DECIMAL_LITERAL, 0); }
+		public TerminalNode HEX_LITERAL() { return getToken(JustParser.HEX_LITERAL, 0); }
+		public TerminalNode OCT_LITERAL() { return getToken(JustParser.OCT_LITERAL, 0); }
+		public TerminalNode BINARY_LITERAL() { return getToken(JustParser.BINARY_LITERAL, 0); }
 		public IntegerLiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_integerLiteral; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterIntegerLiteral(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterIntegerLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitIntegerLiteral(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitIntegerLiteral(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitIntegerLiteral(this);
 		}
 	}
 
@@ -4790,24 +4526,19 @@ public class leftNut extends Parser {
 	}
 
 	public static class FloatLiteralContext extends ParserRuleContext {
-		public TerminalNode FLOAT_LITERAL() { return getToken(leftNut.FLOAT_LITERAL, 0); }
-		public TerminalNode HEX_FLOAT_LITERAL() { return getToken(leftNut.HEX_FLOAT_LITERAL, 0); }
+		public TerminalNode FLOAT_LITERAL() { return getToken(JustParser.FLOAT_LITERAL, 0); }
+		public TerminalNode HEX_FLOAT_LITERAL() { return getToken(JustParser.HEX_FLOAT_LITERAL, 0); }
 		public FloatLiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_floatLiteral; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterFloatLiteral(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFloatLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitFloatLiteral(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitFloatLiteral(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFloatLiteral(this);
 		}
 	}
 
@@ -4842,16 +4573,16 @@ public class leftNut extends Parser {
 	}
 
 	public static class AltAnnotationQualifiedNameContext extends ParserRuleContext {
-		public TerminalNode AT() { return getToken(leftNut.AT, 0); }
+		public TerminalNode AT() { return getToken(JustParser.AT, 0); }
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
 		}
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(leftNut.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(leftNut.DOT, i);
+			return getToken(JustParser.DOT, i);
 		}
 		public AltAnnotationQualifiedNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4859,16 +4590,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_altAnnotationQualifiedName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAltAnnotationQualifiedName(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAltAnnotationQualifiedName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAltAnnotationQualifiedName(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAltAnnotationQualifiedName(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAltAnnotationQualifiedName(this);
 		}
 	}
 
@@ -4913,15 +4639,15 @@ public class leftNut extends Parser {
 	}
 
 	public static class AnnotationContext extends ParserRuleContext {
-		public TerminalNode AT() { return getToken(leftNut.AT, 0); }
+		public TerminalNode AT() { return getToken(JustParser.AT, 0); }
 		public QualifiedNameContext qualifiedName() {
 			return getRuleContext(QualifiedNameContext.class,0);
 		}
 		public AltAnnotationQualifiedNameContext altAnnotationQualifiedName() {
 			return getRuleContext(AltAnnotationQualifiedNameContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public ElementValuePairsContext elementValuePairs() {
 			return getRuleContext(ElementValuePairsContext.class,0);
 		}
@@ -4934,16 +4660,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotation; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotation(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotation(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotation(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotation(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotation(this);
 		}
 	}
 
@@ -5020,9 +4741,9 @@ public class leftNut extends Parser {
 		public ElementValuePairContext elementValuePair(int i) {
 			return getRuleContext(ElementValuePairContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public ElementValuePairsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5030,16 +4751,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValuePairs; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterElementValuePairs(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValuePairs(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitElementValuePairs(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitElementValuePairs(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValuePairs(this);
 		}
 	}
 
@@ -5085,7 +4801,7 @@ public class leftNut extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(leftNut.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
 		public ElementValueContext elementValue() {
 			return getRuleContext(ElementValueContext.class,0);
 		}
@@ -5095,16 +4811,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValuePair; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterElementValuePair(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValuePair(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitElementValuePair(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitElementValuePair(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValuePair(this);
 		}
 	}
 
@@ -5149,16 +4860,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValue; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterElementValue(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValue(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitElementValue(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitElementValue(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValue(this);
 		}
 	}
 
@@ -5204,17 +4910,17 @@ public class leftNut extends Parser {
 	}
 
 	public static class ElementValueArrayInitializerContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<ElementValueContext> elementValue() {
 			return getRuleContexts(ElementValueContext.class);
 		}
 		public ElementValueContext elementValue(int i) {
 			return getRuleContext(ElementValueContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public ElementValueArrayInitializerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5222,16 +4928,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValueArrayInitializer; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterElementValueArrayInitializer(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValueArrayInitializer(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitElementValueArrayInitializer(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitElementValueArrayInitializer(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValueArrayInitializer(this);
 		}
 	}
 
@@ -5264,7 +4965,7 @@ public class leftNut extends Parser {
 						setState(834);
 						elementValue();
 						}
-						}
+						} 
 					}
 					setState(839);
 					_errHandler.sync(this);
@@ -5299,8 +5000,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class AnnotationTypeDeclarationContext extends ParserRuleContext {
-		public TerminalNode AT() { return getToken(leftNut.AT, 0); }
-		public TerminalNode INTERFACE() { return getToken(leftNut.INTERFACE, 0); }
+		public TerminalNode AT() { return getToken(JustParser.AT, 0); }
+		public TerminalNode INTERFACE() { return getToken(JustParser.INTERFACE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -5313,16 +5014,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationTypeDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotationTypeDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotationTypeDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotationTypeDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeDeclaration(this);
 		}
 	}
 
@@ -5354,8 +5050,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class AnnotationTypeBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<AnnotationTypeElementDeclarationContext> annotationTypeElementDeclaration() {
 			return getRuleContexts(AnnotationTypeElementDeclarationContext.class);
 		}
@@ -5368,16 +5064,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationTypeBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotationTypeBody(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotationTypeBody(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotationTypeBody(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeBody(this);
 		}
 	}
 
@@ -5429,23 +5120,18 @@ public class leftNut extends Parser {
 		public ModifierContext modifier(int i) {
 			return getRuleContext(ModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public AnnotationTypeElementDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationTypeElementDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotationTypeElementDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeElementDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotationTypeElementDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotationTypeElementDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeElementDeclaration(this);
 		}
 	}
 
@@ -5509,7 +5195,7 @@ public class leftNut extends Parser {
 						setState(861);
 						modifier();
 						}
-						}
+						} 
 					}
 					setState(866);
 					_errHandler.sync(this);
@@ -5548,7 +5234,7 @@ public class leftNut extends Parser {
 		public AnnotationMethodOrConstantRestContext annotationMethodOrConstantRest() {
 			return getRuleContext(AnnotationMethodOrConstantRestContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public ClassDeclarationContext classDeclaration() {
 			return getRuleContext(ClassDeclarationContext.class,0);
 		}
@@ -5570,16 +5256,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationTypeElementRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotationTypeElementRest(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeElementRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotationTypeElementRest(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotationTypeElementRest(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeElementRest(this);
 		}
 	}
 
@@ -5712,16 +5393,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationMethodOrConstantRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotationMethodOrConstantRest(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationMethodOrConstantRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotationMethodOrConstantRest(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotationMethodOrConstantRest(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationMethodOrConstantRest(this);
 		}
 	}
 
@@ -5763,8 +5439,8 @@ public class leftNut extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public DefaultValueContext defaultValue() {
 			return getRuleContext(DefaultValueContext.class,0);
 		}
@@ -5774,16 +5450,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationMethodRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotationMethodRest(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationMethodRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotationMethodRest(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotationMethodRest(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationMethodRest(this);
 		}
 	}
 
@@ -5833,16 +5504,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationConstantRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterAnnotationConstantRest(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationConstantRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitAnnotationConstantRest(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitAnnotationConstantRest(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationConstantRest(this);
 		}
 	}
 
@@ -5868,7 +5534,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class DefaultValueContext extends ParserRuleContext {
-		public TerminalNode DEFAULT() { return getToken(leftNut.DEFAULT, 0); }
+		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
 		public ElementValueContext elementValue() {
 			return getRuleContext(ElementValueContext.class,0);
 		}
@@ -5878,16 +5544,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_defaultValue; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterDefaultValue(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterDefaultValue(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitDefaultValue(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitDefaultValue(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitDefaultValue(this);
 		}
 	}
 
@@ -5915,7 +5576,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class RecordDeclarationContext extends ParserRuleContext {
-		public TerminalNode RECORD() { return getToken(leftNut.RECORD, 0); }
+		public TerminalNode RECORD() { return getToken(JustParser.RECORD, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -5928,7 +5589,7 @@ public class leftNut extends Parser {
 		public TypeParametersContext typeParameters() {
 			return getRuleContext(TypeParametersContext.class,0);
 		}
-		public TerminalNode IMPLEMENTS() { return getToken(leftNut.IMPLEMENTS, 0); }
+		public TerminalNode IMPLEMENTS() { return getToken(JustParser.IMPLEMENTS, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
@@ -5938,16 +5599,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterRecordDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitRecordDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitRecordDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordDeclaration(this);
 		}
 	}
 
@@ -6002,8 +5658,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class RecordHeaderContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public RecordComponentListContext recordComponentList() {
 			return getRuleContext(RecordComponentListContext.class,0);
 		}
@@ -6013,16 +5669,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordHeader; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterRecordHeader(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordHeader(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitRecordHeader(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitRecordHeader(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordHeader(this);
 		}
 	}
 
@@ -6067,9 +5718,9 @@ public class leftNut extends Parser {
 		public RecordComponentContext recordComponent(int i) {
 			return getRuleContext(RecordComponentContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public RecordComponentListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6077,16 +5728,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordComponentList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterRecordComponentList(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordComponentList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitRecordComponentList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitRecordComponentList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordComponentList(this);
 		}
 	}
 
@@ -6141,16 +5787,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordComponent; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterRecordComponent(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordComponent(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitRecordComponent(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitRecordComponent(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordComponent(this);
 		}
 	}
 
@@ -6178,8 +5819,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class RecordBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<ClassBodyDeclarationContext> classBodyDeclaration() {
 			return getRuleContexts(ClassBodyDeclarationContext.class);
 		}
@@ -6192,16 +5833,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterRecordBody(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitRecordBody(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitRecordBody(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordBody(this);
 		}
 	}
 
@@ -6244,8 +5880,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class BlockContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<BlockStatementContext> blockStatement() {
 			return getRuleContexts(BlockStatementContext.class);
 		}
@@ -6258,16 +5894,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_block; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterBlock(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterBlock(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitBlock(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitBlock(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitBlock(this);
 		}
 	}
 
@@ -6313,7 +5944,7 @@ public class leftNut extends Parser {
 		public LocalVariableDeclarationContext localVariableDeclaration() {
 			return getRuleContext(LocalVariableDeclarationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public StatementContext statement() {
 			return getRuleContext(StatementContext.class,0);
 		}
@@ -6326,16 +5957,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_blockStatement; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterBlockStatement(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterBlockStatement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitBlockStatement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitBlockStatement(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitBlockStatement(this);
 		}
 	}
 
@@ -6389,11 +6015,11 @@ public class leftNut extends Parser {
 		public VariableDeclaratorsContext variableDeclarators() {
 			return getRuleContext(VariableDeclaratorsContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(leftNut.VAR, 0); }
+		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(leftNut.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -6409,16 +6035,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_localVariableDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLocalVariableDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLocalVariableDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLocalVariableDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLocalVariableDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLocalVariableDeclaration(this);
 		}
 	}
 
@@ -6439,7 +6060,7 @@ public class leftNut extends Parser {
 					setState(966);
 					variableModifier();
 					}
-					}
+					} 
 				}
 				setState(971);
 				_errHandler.sync(this);
@@ -6483,37 +6104,32 @@ public class leftNut extends Parser {
 	}
 
 	public static class IdentifierContext extends ParserRuleContext {
-		public TerminalNode IDENTIFIER() { return getToken(leftNut.IDENTIFIER, 0); }
-		public TerminalNode OPEN() { return getToken(leftNut.OPEN, 0); }
-		public TerminalNode REQUIRES() { return getToken(leftNut.REQUIRES, 0); }
-		public TerminalNode EXPORTS() { return getToken(leftNut.EXPORTS, 0); }
-		public TerminalNode OPENS() { return getToken(leftNut.OPENS, 0); }
-		public TerminalNode TO() { return getToken(leftNut.TO, 0); }
-		public TerminalNode USES() { return getToken(leftNut.USES, 0); }
-		public TerminalNode PROVIDES() { return getToken(leftNut.PROVIDES, 0); }
-		public TerminalNode WITH() { return getToken(leftNut.WITH, 0); }
-		public TerminalNode TRANSITIVE() { return getToken(leftNut.TRANSITIVE, 0); }
-		public TerminalNode YIELD() { return getToken(leftNut.YIELD, 0); }
-		public TerminalNode SEALED() { return getToken(leftNut.SEALED, 0); }
-		public TerminalNode PERMITS() { return getToken(leftNut.PERMITS, 0); }
-		public TerminalNode RECORD() { return getToken(leftNut.RECORD, 0); }
-		public TerminalNode VAR() { return getToken(leftNut.VAR, 0); }
+		public TerminalNode IDENTIFIER() { return getToken(JustParser.IDENTIFIER, 0); }
+		public TerminalNode OPEN() { return getToken(JustParser.OPEN, 0); }
+		public TerminalNode REQUIRES() { return getToken(JustParser.REQUIRES, 0); }
+		public TerminalNode EXPORTS() { return getToken(JustParser.EXPORTS, 0); }
+		public TerminalNode OPENS() { return getToken(JustParser.OPENS, 0); }
+		public TerminalNode TO() { return getToken(JustParser.TO, 0); }
+		public TerminalNode USES() { return getToken(JustParser.USES, 0); }
+		public TerminalNode PROVIDES() { return getToken(JustParser.PROVIDES, 0); }
+		public TerminalNode WITH() { return getToken(JustParser.WITH, 0); }
+		public TerminalNode TRANSITIVE() { return getToken(JustParser.TRANSITIVE, 0); }
+		public TerminalNode YIELD() { return getToken(JustParser.YIELD, 0); }
+		public TerminalNode SEALED() { return getToken(JustParser.SEALED, 0); }
+		public TerminalNode PERMITS() { return getToken(JustParser.PERMITS, 0); }
+		public TerminalNode RECORD() { return getToken(JustParser.RECORD, 0); }
+		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
 		public IdentifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_identifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterIdentifier(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterIdentifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitIdentifier(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitIdentifier(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitIdentifier(this);
 		}
 	}
 
@@ -6563,23 +6179,18 @@ public class leftNut extends Parser {
 		public ClassOrInterfaceModifierContext classOrInterfaceModifier(int i) {
 			return getRuleContext(ClassOrInterfaceModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public LocalTypeDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_localTypeDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLocalTypeDeclaration(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLocalTypeDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLocalTypeDeclaration(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLocalTypeDeclaration(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLocalTypeDeclaration(this);
 		}
 	}
 
@@ -6629,7 +6240,7 @@ public class leftNut extends Parser {
 						setState(984);
 						classOrInterfaceModifier();
 						}
-						}
+						} 
 					}
 					setState(989);
 					_errHandler.sync(this);
@@ -6690,16 +6301,16 @@ public class leftNut extends Parser {
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode ASSERT() { return getToken(leftNut.ASSERT, 0); }
+		public TerminalNode ASSERT() { return getToken(JustParser.ASSERT, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
-		public TerminalNode COLON() { return getToken(leftNut.COLON, 0); }
-		public TerminalNode IF() { return getToken(leftNut.IF, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
+		public TerminalNode IF() { return getToken(JustParser.IF, 0); }
 		public ParExpressionContext parExpression() {
 			return getRuleContext(ParExpressionContext.class,0);
 		}
@@ -6709,16 +6320,16 @@ public class leftNut extends Parser {
 		public StatementContext statement(int i) {
 			return getRuleContext(StatementContext.class,i);
 		}
-		public TerminalNode ELSE() { return getToken(leftNut.ELSE, 0); }
-		public TerminalNode FOR() { return getToken(leftNut.FOR, 0); }
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
+		public TerminalNode ELSE() { return getToken(JustParser.ELSE, 0); }
+		public TerminalNode FOR() { return getToken(JustParser.FOR, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
 		public ForControlContext forControl() {
 			return getRuleContext(ForControlContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
-		public TerminalNode WHILE() { return getToken(leftNut.WHILE, 0); }
-		public TerminalNode DO() { return getToken(leftNut.DO, 0); }
-		public TerminalNode TRY() { return getToken(leftNut.TRY, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode WHILE() { return getToken(JustParser.WHILE, 0); }
+		public TerminalNode DO() { return getToken(JustParser.DO, 0); }
+		public TerminalNode TRY() { return getToken(JustParser.TRY, 0); }
 		public FinallyBlockContext finallyBlock() {
 			return getRuleContext(FinallyBlockContext.class,0);
 		}
@@ -6731,9 +6342,9 @@ public class leftNut extends Parser {
 		public ResourceSpecificationContext resourceSpecification() {
 			return getRuleContext(ResourceSpecificationContext.class,0);
 		}
-		public TerminalNode SWITCH() { return getToken(leftNut.SWITCH, 0); }
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode SWITCH() { return getToken(JustParser.SWITCH, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<SwitchBlockStatementGroupContext> switchBlockStatementGroup() {
 			return getRuleContexts(SwitchBlockStatementGroupContext.class);
 		}
@@ -6746,15 +6357,15 @@ public class leftNut extends Parser {
 		public SwitchLabelContext switchLabel(int i) {
 			return getRuleContext(SwitchLabelContext.class,i);
 		}
-		public TerminalNode SYNCHRONIZED() { return getToken(leftNut.SYNCHRONIZED, 0); }
-		public TerminalNode RETURN() { return getToken(leftNut.RETURN, 0); }
-		public TerminalNode THROW() { return getToken(leftNut.THROW, 0); }
-		public TerminalNode BREAK() { return getToken(leftNut.BREAK, 0); }
+		public TerminalNode SYNCHRONIZED() { return getToken(JustParser.SYNCHRONIZED, 0); }
+		public TerminalNode RETURN() { return getToken(JustParser.RETURN, 0); }
+		public TerminalNode THROW() { return getToken(JustParser.THROW, 0); }
+		public TerminalNode BREAK() { return getToken(JustParser.BREAK, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode CONTINUE() { return getToken(leftNut.CONTINUE, 0); }
-		public TerminalNode YIELD() { return getToken(leftNut.YIELD, 0); }
+		public TerminalNode CONTINUE() { return getToken(JustParser.CONTINUE, 0); }
+		public TerminalNode YIELD() { return getToken(JustParser.YIELD, 0); }
 		public SwitchExpressionContext switchExpression() {
 			return getRuleContext(SwitchExpressionContext.class,0);
 		}
@@ -6764,16 +6375,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_statement; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterStatement(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterStatement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitStatement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitStatement(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitStatement(this);
 		}
 	}
 
@@ -6892,7 +6498,7 @@ public class leftNut extends Parser {
 				switch (_input.LA(1)) {
 				case CATCH:
 					{
-					setState(1033);
+					setState(1033); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 					do {
@@ -6902,7 +6508,7 @@ public class leftNut extends Parser {
 						catchClause();
 						}
 						}
-						setState(1035);
+						setState(1035); 
 						_errHandler.sync(this);
 						_la = _input.LA(1);
 					} while ( _la==CATCH );
@@ -6983,7 +6589,7 @@ public class leftNut extends Parser {
 						setState(1058);
 						switchBlockStatementGroup();
 						}
-						}
+						} 
 					}
 					setState(1063);
 					_errHandler.sync(this);
@@ -7155,15 +6761,15 @@ public class leftNut extends Parser {
 	}
 
 	public static class CatchClauseContext extends ParserRuleContext {
-		public TerminalNode CATCH() { return getToken(leftNut.CATCH, 0); }
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
+		public TerminalNode CATCH() { return getToken(JustParser.CATCH, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
 		public CatchTypeContext catchType() {
 			return getRuleContext(CatchTypeContext.class,0);
 		}
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -7179,16 +6785,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_catchClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterCatchClause(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCatchClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitCatchClause(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitCatchClause(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCatchClause(this);
 		}
 	}
 
@@ -7213,7 +6814,7 @@ public class leftNut extends Parser {
 					setState(1115);
 					variableModifier();
 					}
-					}
+					} 
 				}
 				setState(1120);
 				_errHandler.sync(this);
@@ -7247,9 +6848,9 @@ public class leftNut extends Parser {
 		public QualifiedNameContext qualifiedName(int i) {
 			return getRuleContext(QualifiedNameContext.class,i);
 		}
-		public List<TerminalNode> BITOR() { return getTokens(leftNut.BITOR); }
+		public List<TerminalNode> BITOR() { return getTokens(JustParser.BITOR); }
 		public TerminalNode BITOR(int i) {
-			return getToken(leftNut.BITOR, i);
+			return getToken(JustParser.BITOR, i);
 		}
 		public CatchTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7257,16 +6858,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_catchType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterCatchType(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCatchType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitCatchType(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitCatchType(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCatchType(this);
 		}
 	}
 
@@ -7309,7 +6905,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class FinallyBlockContext extends ParserRuleContext {
-		public TerminalNode FINALLY() { return getToken(leftNut.FINALLY, 0); }
+		public TerminalNode FINALLY() { return getToken(JustParser.FINALLY, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -7319,16 +6915,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_finallyBlock; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterFinallyBlock(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFinallyBlock(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitFinallyBlock(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitFinallyBlock(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFinallyBlock(this);
 		}
 	}
 
@@ -7356,28 +6947,23 @@ public class leftNut extends Parser {
 	}
 
 	public static class ResourceSpecificationContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
 		public ResourcesContext resources() {
 			return getRuleContext(ResourcesContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
-		public TerminalNode SEMI() { return getToken(leftNut.SEMI, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
 		public ResourceSpecificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_resourceSpecification; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterResourceSpecification(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterResourceSpecification(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitResourceSpecification(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitResourceSpecification(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitResourceSpecification(this);
 		}
 	}
 
@@ -7424,9 +7010,9 @@ public class leftNut extends Parser {
 		public ResourceContext resource(int i) {
 			return getRuleContext(ResourceContext.class,i);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(leftNut.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(JustParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(leftNut.SEMI, i);
+			return getToken(JustParser.SEMI, i);
 		}
 		public ResourcesContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7434,16 +7020,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_resources; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterResources(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterResources(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitResources(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitResources(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitResources(this);
 		}
 	}
 
@@ -7468,7 +7049,7 @@ public class leftNut extends Parser {
 					setState(1146);
 					resource();
 					}
-					}
+					} 
 				}
 				setState(1151);
 				_errHandler.sync(this);
@@ -7488,7 +7069,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class ResourceContext extends ParserRuleContext {
-		public TerminalNode ASSIGN() { return getToken(leftNut.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -7498,7 +7079,7 @@ public class leftNut extends Parser {
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(leftNut.VAR, 0); }
+		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -7514,16 +7095,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_resource; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterResource(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterResource(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitResource(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitResource(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitResource(this);
 		}
 	}
 
@@ -7548,7 +7124,7 @@ public class leftNut extends Parser {
 						setState(1152);
 						variableModifier();
 						}
-						}
+						} 
 					}
 					setState(1157);
 					_errHandler.sync(this);
@@ -7619,16 +7195,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_switchBlockStatementGroup; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterSwitchBlockStatementGroup(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchBlockStatementGroup(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitSwitchBlockStatementGroup(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitSwitchBlockStatementGroup(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchBlockStatementGroup(this);
 		}
 	}
 
@@ -7639,7 +7210,7 @@ public class leftNut extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1172);
+			setState(1172); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
@@ -7649,11 +7220,11 @@ public class leftNut extends Parser {
 				switchLabel();
 				}
 				}
-				setState(1174);
+				setState(1174); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==CASE || _la==DEFAULT );
-			setState(1177);
+			setState(1177); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
@@ -7663,7 +7234,7 @@ public class leftNut extends Parser {
 				blockStatement();
 				}
 				}
-				setState(1179);
+				setState(1179); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << ABSTRACT) | (1L << ASSERT) | (1L << BOOLEAN) | (1L << BREAK) | (1L << BYTE) | (1L << CHAR) | (1L << CLASS) | (1L << CONTINUE) | (1L << DO) | (1L << DOUBLE) | (1L << FINAL) | (1L << FLOAT) | (1L << FOR) | (1L << IF) | (1L << INT) | (1L << INTERFACE) | (1L << LONG) | (1L << NEW) | (1L << PRIVATE) | (1L << PROTECTED) | (1L << PUBLIC) | (1L << RETURN) | (1L << SHORT) | (1L << STATIC) | (1L << STRICTFP) | (1L << SUPER) | (1L << SWITCH) | (1L << SYNCHRONIZED) | (1L << THIS) | (1L << THROW) | (1L << TRY) | (1L << VOID) | (1L << WHILE) | (1L << VAR) | (1L << YIELD) | (1L << RECORD) | (1L << SEALED) | (1L << PERMITS) | (1L << NON_SEALED) | (1L << DECIMAL_LITERAL) | (1L << HEX_LITERAL) | (1L << OCT_LITERAL) | (1L << BINARY_LITERAL) | (1L << FLOAT_LITERAL) | (1L << HEX_FLOAT_LITERAL) | (1L << BOOL_LITERAL))) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & ((1L << (CHAR_LITERAL - 64)) | (1L << (STRING_LITERAL - 64)) | (1L << (TEXT_BLOCK - 64)) | (1L << (NULL_LITERAL - 64)) | (1L << (LPAREN - 64)) | (1L << (LBRACE - 64)) | (1L << (SEMI - 64)) | (1L << (LT - 64)) | (1L << (BANG - 64)) | (1L << (TILDE - 64)) | (1L << (INC - 64)) | (1L << (DEC - 64)) | (1L << (ADD - 64)) | (1L << (SUB - 64)) | (1L << (BITAND - 64)) | (1L << (AT - 64)) | (1L << (IDENTIFIER - 64)) | (1L << (OPEN - 64)) | (1L << (REQUIRES - 64)) | (1L << (EXPORTS - 64)) | (1L << (OPENS - 64)) | (1L << (TO - 64)) | (1L << (USES - 64)) | (1L << (PROVIDES - 64)) | (1L << (WITH - 64)) | (1L << (TRANSITIVE - 64)))) != 0) );
@@ -7684,35 +7255,30 @@ public class leftNut extends Parser {
 		public ExpressionContext constantExpression;
 		public Token enumConstantName;
 		public IdentifierContext varName;
-		public TerminalNode CASE() { return getToken(leftNut.CASE, 0); }
-		public TerminalNode COLON() { return getToken(leftNut.COLON, 0); }
+		public TerminalNode CASE() { return getToken(JustParser.CASE, 0); }
+		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode IDENTIFIER() { return getToken(leftNut.IDENTIFIER, 0); }
+		public TerminalNode IDENTIFIER() { return getToken(JustParser.IDENTIFIER, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode DEFAULT() { return getToken(leftNut.DEFAULT, 0); }
+		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
 		public SwitchLabelContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switchLabel; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterSwitchLabel(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchLabel(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitSwitchLabel(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitSwitchLabel(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchLabel(this);
 		}
 	}
 
@@ -7785,9 +7351,9 @@ public class leftNut extends Parser {
 		public EnhancedForControlContext enhancedForControl() {
 			return getRuleContext(EnhancedForControlContext.class,0);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(leftNut.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(JustParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(leftNut.SEMI, i);
+			return getToken(JustParser.SEMI, i);
 		}
 		public ForInitContext forInit() {
 			return getRuleContext(ForInitContext.class,0);
@@ -7804,16 +7370,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_forControl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterForControl(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterForControl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitForControl(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitForControl(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitForControl(this);
 		}
 	}
 
@@ -7897,16 +7458,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_forInit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterForInit(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterForInit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitForInit(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitForInit(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitForInit(this);
 		}
 	}
 
@@ -7948,14 +7504,14 @@ public class leftNut extends Parser {
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(leftNut.COLON, 0); }
+		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(leftNut.VAR, 0); }
+		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
 		public List<VariableModifierContext> variableModifier() {
 			return getRuleContexts(VariableModifierContext.class);
 		}
@@ -7968,16 +7524,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_enhancedForControl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterEnhancedForControl(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnhancedForControl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitEnhancedForControl(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitEnhancedForControl(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnhancedForControl(this);
 		}
 	}
 
@@ -7998,7 +7549,7 @@ public class leftNut extends Parser {
 					setState(1212);
 					variableModifier();
 					}
-					}
+					} 
 				}
 				setState(1217);
 				_errHandler.sync(this);
@@ -8040,27 +7591,22 @@ public class leftNut extends Parser {
 	}
 
 	public static class ParExpressionContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public ParExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterParExpression(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterParExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitParExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitParExpression(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitParExpression(this);
 		}
 	}
 
@@ -8096,9 +7642,9 @@ public class leftNut extends Parser {
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public ExpressionListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8106,16 +7652,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_expressionList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterExpressionList(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExpressionList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitExpressionList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitExpressionList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExpressionList(this);
 		}
 	}
 
@@ -8161,30 +7702,25 @@ public class leftNut extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
-		public TerminalNode BANG() { return getToken(leftNut.BANG, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode BANG() { return getToken(JustParser.BANG, 0); }
 		public ExpressionListContext expressionList() {
 			return getRuleContext(ExpressionListContext.class,0);
 		}
-		public TerminalNode THIS() { return getToken(leftNut.THIS, 0); }
-		public TerminalNode SUPER() { return getToken(leftNut.SUPER, 0); }
+		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
+		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
 		public MethodCallContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_methodCall; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterMethodCall(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMethodCall(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitMethodCall(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitMethodCall(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMethodCall(this);
 		}
 	}
 
@@ -8308,18 +7844,18 @@ public class leftNut extends Parser {
 		public MethodCallContext methodCall() {
 			return getRuleContext(MethodCallContext.class,0);
 		}
-		public TerminalNode NEW() { return getToken(leftNut.NEW, 0); }
+		public TerminalNode NEW() { return getToken(JustParser.NEW, 0); }
 		public CreatorContext creator() {
 			return getRuleContext(CreatorContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
 		public List<TypeTypeContext> typeType() {
 			return getRuleContexts(TypeTypeContext.class);
 		}
 		public TypeTypeContext typeType(int i) {
 			return getRuleContext(TypeTypeContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
@@ -8332,23 +7868,23 @@ public class leftNut extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> BITAND() { return getTokens(leftNut.BITAND); }
+		public List<TerminalNode> BITAND() { return getTokens(JustParser.BITAND); }
 		public TerminalNode BITAND(int i) {
-			return getToken(leftNut.BITAND, i);
+			return getToken(JustParser.BITAND, i);
 		}
-		public TerminalNode ADD() { return getToken(leftNut.ADD, 0); }
-		public TerminalNode SUB() { return getToken(leftNut.SUB, 0); }
-		public TerminalNode INC() { return getToken(leftNut.INC, 0); }
-		public TerminalNode DEC() { return getToken(leftNut.DEC, 0); }
-		public TerminalNode TILDE() { return getToken(leftNut.TILDE, 0); }
-		public TerminalNode BANG() { return getToken(leftNut.BANG, 0); }
+		public TerminalNode ADD() { return getToken(JustParser.ADD, 0); }
+		public TerminalNode SUB() { return getToken(JustParser.SUB, 0); }
+		public TerminalNode INC() { return getToken(JustParser.INC, 0); }
+		public TerminalNode DEC() { return getToken(JustParser.DEC, 0); }
+		public TerminalNode TILDE() { return getToken(JustParser.TILDE, 0); }
+		public TerminalNode BANG() { return getToken(JustParser.BANG, 0); }
 		public LambdaExpressionContext lambdaExpression() {
 			return getRuleContext(LambdaExpressionContext.class,0);
 		}
 		public SwitchExpressionContext switchExpression() {
 			return getRuleContext(SwitchExpressionContext.class,0);
 		}
-		public TerminalNode COLONCOLON() { return getToken(leftNut.COLONCOLON, 0); }
+		public TerminalNode COLONCOLON() { return getToken(JustParser.COLONCOLON, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -8358,45 +7894,45 @@ public class leftNut extends Parser {
 		public ClassTypeContext classType() {
 			return getRuleContext(ClassTypeContext.class,0);
 		}
-		public TerminalNode MUL() { return getToken(leftNut.MUL, 0); }
-		public TerminalNode DIV() { return getToken(leftNut.DIV, 0); }
-		public TerminalNode MOD() { return getToken(leftNut.MOD, 0); }
-		public List<TerminalNode> LT() { return getTokens(leftNut.LT); }
+		public TerminalNode MUL() { return getToken(JustParser.MUL, 0); }
+		public TerminalNode DIV() { return getToken(JustParser.DIV, 0); }
+		public TerminalNode MOD() { return getToken(JustParser.MOD, 0); }
+		public List<TerminalNode> LT() { return getTokens(JustParser.LT); }
 		public TerminalNode LT(int i) {
-			return getToken(leftNut.LT, i);
+			return getToken(JustParser.LT, i);
 		}
-		public List<TerminalNode> GT() { return getTokens(leftNut.GT); }
+		public List<TerminalNode> GT() { return getTokens(JustParser.GT); }
 		public TerminalNode GT(int i) {
-			return getToken(leftNut.GT, i);
+			return getToken(JustParser.GT, i);
 		}
-		public TerminalNode LE() { return getToken(leftNut.LE, 0); }
-		public TerminalNode GE() { return getToken(leftNut.GE, 0); }
-		public TerminalNode EQUAL() { return getToken(leftNut.EQUAL, 0); }
-		public TerminalNode NOTEQUAL() { return getToken(leftNut.NOTEQUAL, 0); }
-		public TerminalNode CARET() { return getToken(leftNut.CARET, 0); }
-		public TerminalNode BITOR() { return getToken(leftNut.BITOR, 0); }
-		public TerminalNode AND() { return getToken(leftNut.AND, 0); }
-		public TerminalNode OR() { return getToken(leftNut.OR, 0); }
-		public TerminalNode COLON() { return getToken(leftNut.COLON, 0); }
-		public TerminalNode QUESTION() { return getToken(leftNut.QUESTION, 0); }
-		public TerminalNode ASSIGN() { return getToken(leftNut.ASSIGN, 0); }
-		public TerminalNode ADD_ASSIGN() { return getToken(leftNut.ADD_ASSIGN, 0); }
-		public TerminalNode SUB_ASSIGN() { return getToken(leftNut.SUB_ASSIGN, 0); }
-		public TerminalNode MUL_ASSIGN() { return getToken(leftNut.MUL_ASSIGN, 0); }
-		public TerminalNode DIV_ASSIGN() { return getToken(leftNut.DIV_ASSIGN, 0); }
-		public TerminalNode AND_ASSIGN() { return getToken(leftNut.AND_ASSIGN, 0); }
-		public TerminalNode OR_ASSIGN() { return getToken(leftNut.OR_ASSIGN, 0); }
-		public TerminalNode XOR_ASSIGN() { return getToken(leftNut.XOR_ASSIGN, 0); }
-		public TerminalNode RSHIFT_ASSIGN() { return getToken(leftNut.RSHIFT_ASSIGN, 0); }
-		public TerminalNode URSHIFT_ASSIGN() { return getToken(leftNut.URSHIFT_ASSIGN, 0); }
-		public TerminalNode LSHIFT_ASSIGN() { return getToken(leftNut.LSHIFT_ASSIGN, 0); }
-		public TerminalNode MOD_ASSIGN() { return getToken(leftNut.MOD_ASSIGN, 0); }
-		public TerminalNode DOT() { return getToken(leftNut.DOT, 0); }
-		public TerminalNode THIS() { return getToken(leftNut.THIS, 0); }
+		public TerminalNode LE() { return getToken(JustParser.LE, 0); }
+		public TerminalNode GE() { return getToken(JustParser.GE, 0); }
+		public TerminalNode EQUAL() { return getToken(JustParser.EQUAL, 0); }
+		public TerminalNode NOTEQUAL() { return getToken(JustParser.NOTEQUAL, 0); }
+		public TerminalNode CARET() { return getToken(JustParser.CARET, 0); }
+		public TerminalNode BITOR() { return getToken(JustParser.BITOR, 0); }
+		public TerminalNode AND() { return getToken(JustParser.AND, 0); }
+		public TerminalNode OR() { return getToken(JustParser.OR, 0); }
+		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
+		public TerminalNode QUESTION() { return getToken(JustParser.QUESTION, 0); }
+		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
+		public TerminalNode ADD_ASSIGN() { return getToken(JustParser.ADD_ASSIGN, 0); }
+		public TerminalNode SUB_ASSIGN() { return getToken(JustParser.SUB_ASSIGN, 0); }
+		public TerminalNode MUL_ASSIGN() { return getToken(JustParser.MUL_ASSIGN, 0); }
+		public TerminalNode DIV_ASSIGN() { return getToken(JustParser.DIV_ASSIGN, 0); }
+		public TerminalNode AND_ASSIGN() { return getToken(JustParser.AND_ASSIGN, 0); }
+		public TerminalNode OR_ASSIGN() { return getToken(JustParser.OR_ASSIGN, 0); }
+		public TerminalNode XOR_ASSIGN() { return getToken(JustParser.XOR_ASSIGN, 0); }
+		public TerminalNode RSHIFT_ASSIGN() { return getToken(JustParser.RSHIFT_ASSIGN, 0); }
+		public TerminalNode URSHIFT_ASSIGN() { return getToken(JustParser.URSHIFT_ASSIGN, 0); }
+		public TerminalNode LSHIFT_ASSIGN() { return getToken(JustParser.LSHIFT_ASSIGN, 0); }
+		public TerminalNode MOD_ASSIGN() { return getToken(JustParser.MOD_ASSIGN, 0); }
+		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
+		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
 		public InnerCreatorContext innerCreator() {
 			return getRuleContext(InnerCreatorContext.class,0);
 		}
-		public TerminalNode SUPER() { return getToken(leftNut.SUPER, 0); }
+		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
 		public SuperSuffixContext superSuffix() {
 			return getRuleContext(SuperSuffixContext.class,0);
 		}
@@ -8406,9 +7942,9 @@ public class leftNut extends Parser {
 		public NonWildcardTypeArgumentsContext nonWildcardTypeArguments() {
 			return getRuleContext(NonWildcardTypeArgumentsContext.class,0);
 		}
-		public TerminalNode LBRACK() { return getToken(leftNut.LBRACK, 0); }
-		public TerminalNode RBRACK() { return getToken(leftNut.RBRACK, 0); }
-		public TerminalNode INSTANCEOF() { return getToken(leftNut.INSTANCEOF, 0); }
+		public TerminalNode LBRACK() { return getToken(JustParser.LBRACK, 0); }
+		public TerminalNode RBRACK() { return getToken(JustParser.RBRACK, 0); }
+		public TerminalNode INSTANCEOF() { return getToken(JustParser.INSTANCEOF, 0); }
 		public PatternContext pattern() {
 			return getRuleContext(PatternContext.class,0);
 		}
@@ -8418,16 +7954,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_expression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterExpression(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitExpression(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExpression(this);
 		}
 	}
 
@@ -8484,7 +8015,7 @@ public class leftNut extends Parser {
 						setState(1268);
 						annotation();
 						}
-						}
+						} 
 					}
 					setState(1273);
 					_errHandler.sync(this);
@@ -9011,7 +8542,7 @@ public class leftNut extends Parser {
 						}
 						break;
 					}
-					}
+					} 
 				}
 				setState(1394);
 				_errHandler.sync(this);
@@ -9055,16 +8586,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_pattern; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterPattern(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPattern(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitPattern(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitPattern(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPattern(this);
 		}
 	}
 
@@ -9085,7 +8611,7 @@ public class leftNut extends Parser {
 					setState(1395);
 					variableModifier();
 					}
-					}
+					} 
 				}
 				setState(1400);
 				_errHandler.sync(this);
@@ -9103,7 +8629,7 @@ public class leftNut extends Parser {
 					setState(1402);
 					annotation();
 					}
-					}
+					} 
 				}
 				setState(1407);
 				_errHandler.sync(this);
@@ -9128,7 +8654,7 @@ public class leftNut extends Parser {
 		public LambdaParametersContext lambdaParameters() {
 			return getRuleContext(LambdaParametersContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(leftNut.ARROW, 0); }
+		public TerminalNode ARROW() { return getToken(JustParser.ARROW, 0); }
 		public LambdaBodyContext lambdaBody() {
 			return getRuleContext(LambdaBodyContext.class,0);
 		}
@@ -9138,16 +8664,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLambdaExpression(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLambdaExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLambdaExpression(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaExpression(this);
 		}
 	}
 
@@ -9183,14 +8704,14 @@ public class leftNut extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public FormalParameterListContext formalParameterList() {
 			return getRuleContext(FormalParameterListContext.class,0);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public LambdaLVTIListContext lambdaLVTIList() {
 			return getRuleContext(LambdaLVTIListContext.class,0);
@@ -9201,16 +8722,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaParameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLambdaParameters(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLambdaParameters(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLambdaParameters(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaParameters(this);
 		}
 	}
 
@@ -9320,16 +8836,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterLambdaBody(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitLambdaBody(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitLambdaBody(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaBody(this);
 		}
 	}
 
@@ -9418,13 +8929,13 @@ public class leftNut extends Parser {
 	}
 
 	public static class PrimaryContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
-		public TerminalNode THIS() { return getToken(leftNut.THIS, 0); }
-		public TerminalNode SUPER() { return getToken(leftNut.SUPER, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
+		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
 		public LiteralContext literal() {
 			return getRuleContext(LiteralContext.class,0);
 		}
@@ -9434,8 +8945,8 @@ public class leftNut extends Parser {
 		public TypeTypeOrVoidContext typeTypeOrVoid() {
 			return getRuleContext(TypeTypeOrVoidContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(leftNut.DOT, 0); }
-		public TerminalNode CLASS() { return getToken(leftNut.CLASS, 0); }
+		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
+		public TerminalNode CLASS() { return getToken(JustParser.CLASS, 0); }
 		public NonWildcardTypeArgumentsContext nonWildcardTypeArguments() {
 			return getRuleContext(NonWildcardTypeArgumentsContext.class,0);
 		}
@@ -9451,16 +8962,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_primary; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterPrimary(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPrimary(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitPrimary(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitPrimary(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPrimary(this);
 		}
 	}
 
@@ -9577,12 +9083,12 @@ public class leftNut extends Parser {
 	}
 
 	public static class SwitchExpressionContext extends ParserRuleContext {
-		public TerminalNode SWITCH() { return getToken(leftNut.SWITCH, 0); }
+		public TerminalNode SWITCH() { return getToken(JustParser.SWITCH, 0); }
 		public ParExpressionContext parExpression() {
 			return getRuleContext(ParExpressionContext.class,0);
 		}
-		public TerminalNode LBRACE() { return getToken(leftNut.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(leftNut.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
 		public List<SwitchLabeledRuleContext> switchLabeledRule() {
 			return getRuleContexts(SwitchLabeledRuleContext.class);
 		}
@@ -9595,16 +9101,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_switchExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterSwitchExpression(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitSwitchExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitSwitchExpression(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchExpression(this);
 		}
 	}
 
@@ -9651,36 +9152,31 @@ public class leftNut extends Parser {
 	}
 
 	public static class SwitchLabeledRuleContext extends ParserRuleContext {
-		public TerminalNode CASE() { return getToken(leftNut.CASE, 0); }
+		public TerminalNode CASE() { return getToken(JustParser.CASE, 0); }
 		public SwitchRuleOutcomeContext switchRuleOutcome() {
 			return getRuleContext(SwitchRuleOutcomeContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(leftNut.ARROW, 0); }
-		public TerminalNode COLON() { return getToken(leftNut.COLON, 0); }
+		public TerminalNode ARROW() { return getToken(JustParser.ARROW, 0); }
+		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
 		public ExpressionListContext expressionList() {
 			return getRuleContext(ExpressionListContext.class,0);
 		}
-		public TerminalNode NULL_LITERAL() { return getToken(leftNut.NULL_LITERAL, 0); }
+		public TerminalNode NULL_LITERAL() { return getToken(JustParser.NULL_LITERAL, 0); }
 		public GuardedPatternContext guardedPattern() {
 			return getRuleContext(GuardedPatternContext.class,0);
 		}
-		public TerminalNode DEFAULT() { return getToken(leftNut.DEFAULT, 0); }
+		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
 		public SwitchLabeledRuleContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switchLabeledRule; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterSwitchLabeledRule(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchLabeledRule(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitSwitchLabeledRule(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitSwitchLabeledRule(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchLabeledRule(this);
 		}
 	}
 
@@ -9768,11 +9264,11 @@ public class leftNut extends Parser {
 	}
 
 	public static class GuardedPatternContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
 		public GuardedPatternContext guardedPattern() {
 			return getRuleContext(GuardedPatternContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
@@ -9791,9 +9287,9 @@ public class leftNut extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> AND() { return getTokens(leftNut.AND); }
+		public List<TerminalNode> AND() { return getTokens(JustParser.AND); }
 		public TerminalNode AND(int i) {
-			return getToken(leftNut.AND, i);
+			return getToken(JustParser.AND, i);
 		}
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
@@ -9807,16 +9303,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_guardedPattern; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterGuardedPattern(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGuardedPattern(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitGuardedPattern(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitGuardedPattern(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGuardedPattern(this);
 		}
 	}
 
@@ -9885,7 +9376,7 @@ public class leftNut extends Parser {
 						setState(1491);
 						variableModifier();
 						}
-						}
+						} 
 					}
 					setState(1496);
 					_errHandler.sync(this);
@@ -9903,7 +9394,7 @@ public class leftNut extends Parser {
 						setState(1498);
 						annotation();
 						}
-						}
+						} 
 					}
 					setState(1503);
 					_errHandler.sync(this);
@@ -9923,7 +9414,7 @@ public class leftNut extends Parser {
 						setState(1506);
 						expression(0);
 						}
-						}
+						} 
 					}
 					setState(1511);
 					_errHandler.sync(this);
@@ -9953,7 +9444,7 @@ public class leftNut extends Parser {
 					setState(1516);
 					expression(0);
 					}
-					}
+					} 
 				}
 				setState(1521);
 				_errHandler.sync(this);
@@ -9988,16 +9479,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_switchRuleOutcome; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterSwitchRuleOutcome(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchRuleOutcome(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitSwitchRuleOutcome(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitSwitchRuleOutcome(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchRuleOutcome(this);
 		}
 	}
 
@@ -10055,7 +9541,7 @@ public class leftNut extends Parser {
 		public ClassOrInterfaceTypeContext classOrInterfaceType() {
 			return getRuleContext(ClassOrInterfaceTypeContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(leftNut.DOT, 0); }
+		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
@@ -10071,16 +9557,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_classType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterClassType(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitClassType(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitClassType(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassType(this);
 		}
 	}
 
@@ -10114,7 +9595,7 @@ public class leftNut extends Parser {
 					setState(1536);
 					annotation();
 					}
-					}
+					} 
 				}
 				setState(1541);
 				_errHandler.sync(this);
@@ -10164,16 +9645,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_creator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterCreator(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCreator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitCreator(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitCreator(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCreator(this);
 		}
 	}
 
@@ -10270,9 +9746,9 @@ public class leftNut extends Parser {
 		public TypeArgumentsOrDiamondContext typeArgumentsOrDiamond(int i) {
 			return getRuleContext(TypeArgumentsOrDiamondContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(leftNut.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(leftNut.DOT, i);
+			return getToken(JustParser.DOT, i);
 		}
 		public PrimitiveTypeContext primitiveType() {
 			return getRuleContext(PrimitiveTypeContext.class,0);
@@ -10283,16 +9759,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_createdName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterCreatedName(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCreatedName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitCreatedName(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitCreatedName(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCreatedName(this);
 		}
 	}
 
@@ -10406,16 +9877,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_innerCreator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterInnerCreator(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInnerCreator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitInnerCreator(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitInnerCreator(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInnerCreator(this);
 		}
 	}
 
@@ -10454,13 +9920,13 @@ public class leftNut extends Parser {
 	}
 
 	public static class ArrayCreatorRestContext extends ParserRuleContext {
-		public List<TerminalNode> LBRACK() { return getTokens(leftNut.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(leftNut.LBRACK, i);
+			return getToken(JustParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(leftNut.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(leftNut.RBRACK, i);
+			return getToken(JustParser.RBRACK, i);
 		}
 		public ArrayInitializerContext arrayInitializer() {
 			return getRuleContext(ArrayInitializerContext.class,0);
@@ -10477,16 +9943,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_arrayCreatorRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterArrayCreatorRest(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterArrayCreatorRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitArrayCreatorRest(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitArrayCreatorRest(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitArrayCreatorRest(this);
 		}
 	}
 
@@ -10595,7 +10056,7 @@ public class leftNut extends Parser {
 						setState(1594);
 						match(RBRACK);
 						}
-						}
+						} 
 					}
 					setState(1600);
 					_errHandler.sync(this);
@@ -10613,7 +10074,7 @@ public class leftNut extends Parser {
 						setState(1602);
 						match(RBRACK);
 						}
-						}
+						} 
 					}
 					setState(1607);
 					_errHandler.sync(this);
@@ -10650,16 +10111,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_classCreatorRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterClassCreatorRest(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassCreatorRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitClassCreatorRest(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitClassCreatorRest(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassCreatorRest(this);
 		}
 	}
 
@@ -10707,16 +10163,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocation; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterExplicitGenericInvocation(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExplicitGenericInvocation(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitExplicitGenericInvocation(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitExplicitGenericInvocation(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExplicitGenericInvocation(this);
 		}
 	}
 
@@ -10744,8 +10195,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class TypeArgumentsOrDiamondContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(leftNut.LT, 0); }
-		public TerminalNode GT() { return getToken(leftNut.GT, 0); }
+		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
+		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
 		public TypeArgumentsContext typeArguments() {
 			return getRuleContext(TypeArgumentsContext.class,0);
 		}
@@ -10755,16 +10206,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeArgumentsOrDiamond; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeArgumentsOrDiamond(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeArgumentsOrDiamond(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeArgumentsOrDiamond(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeArgumentsOrDiamond(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeArgumentsOrDiamond(this);
 		}
 	}
 
@@ -10805,8 +10251,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class NonWildcardTypeArgumentsOrDiamondContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(leftNut.LT, 0); }
-		public TerminalNode GT() { return getToken(leftNut.GT, 0); }
+		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
+		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
 		public NonWildcardTypeArgumentsContext nonWildcardTypeArguments() {
 			return getRuleContext(NonWildcardTypeArgumentsContext.class,0);
 		}
@@ -10816,16 +10262,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_nonWildcardTypeArgumentsOrDiamond; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterNonWildcardTypeArgumentsOrDiamond(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterNonWildcardTypeArgumentsOrDiamond(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitNonWildcardTypeArgumentsOrDiamond(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitNonWildcardTypeArgumentsOrDiamond(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitNonWildcardTypeArgumentsOrDiamond(this);
 		}
 	}
 
@@ -10866,27 +10307,22 @@ public class leftNut extends Parser {
 	}
 
 	public static class NonWildcardTypeArgumentsContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(leftNut.LT, 0); }
+		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
-		public TerminalNode GT() { return getToken(leftNut.GT, 0); }
+		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
 		public NonWildcardTypeArgumentsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_nonWildcardTypeArguments; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterNonWildcardTypeArguments(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterNonWildcardTypeArguments(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitNonWildcardTypeArguments(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitNonWildcardTypeArguments(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitNonWildcardTypeArguments(this);
 		}
 	}
 
@@ -10922,9 +10358,9 @@ public class leftNut extends Parser {
 		public TypeTypeContext typeType(int i) {
 			return getRuleContext(TypeTypeContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public TypeListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10932,16 +10368,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeList(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeList(this);
 		}
 	}
 
@@ -10990,20 +10421,20 @@ public class leftNut extends Parser {
 		public PrimitiveTypeContext primitiveType() {
 			return getRuleContext(PrimitiveTypeContext.class,0);
 		}
-		public TerminalNode BITAND() { return getToken(leftNut.BITAND, 0); }
+		public TerminalNode BITAND() { return getToken(JustParser.BITAND, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(leftNut.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(leftNut.LBRACK, i);
+			return getToken(JustParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(leftNut.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(leftNut.RBRACK, i);
+			return getToken(JustParser.RBRACK, i);
 		}
 		public TypeTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -11011,16 +10442,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeType(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeType(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeType(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeType(this);
 		}
 	}
 
@@ -11052,7 +10478,7 @@ public class leftNut extends Parser {
 					setState(1642);
 					annotation();
 					}
-					}
+					} 
 				}
 				setState(1647);
 				_errHandler.sync(this);
@@ -11123,7 +10549,7 @@ public class leftNut extends Parser {
 					setState(1659);
 					match(RBRACK);
 					}
-					}
+					} 
 				}
 				setState(1664);
 				_errHandler.sync(this);
@@ -11143,30 +10569,25 @@ public class leftNut extends Parser {
 	}
 
 	public static class PrimitiveTypeContext extends ParserRuleContext {
-		public TerminalNode BOOLEAN() { return getToken(leftNut.BOOLEAN, 0); }
-		public TerminalNode CHAR() { return getToken(leftNut.CHAR, 0); }
-		public TerminalNode BYTE() { return getToken(leftNut.BYTE, 0); }
-		public TerminalNode SHORT() { return getToken(leftNut.SHORT, 0); }
-		public TerminalNode INT() { return getToken(leftNut.INT, 0); }
-		public TerminalNode LONG() { return getToken(leftNut.LONG, 0); }
-		public TerminalNode FLOAT() { return getToken(leftNut.FLOAT, 0); }
-		public TerminalNode DOUBLE() { return getToken(leftNut.DOUBLE, 0); }
+		public TerminalNode BOOLEAN() { return getToken(JustParser.BOOLEAN, 0); }
+		public TerminalNode CHAR() { return getToken(JustParser.CHAR, 0); }
+		public TerminalNode BYTE() { return getToken(JustParser.BYTE, 0); }
+		public TerminalNode SHORT() { return getToken(JustParser.SHORT, 0); }
+		public TerminalNode INT() { return getToken(JustParser.INT, 0); }
+		public TerminalNode LONG() { return getToken(JustParser.LONG, 0); }
+		public TerminalNode FLOAT() { return getToken(JustParser.FLOAT, 0); }
+		public TerminalNode DOUBLE() { return getToken(JustParser.DOUBLE, 0); }
 		public PrimitiveTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primitiveType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterPrimitiveType(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPrimitiveType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitPrimitiveType(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitPrimitiveType(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPrimitiveType(this);
 		}
 	}
 
@@ -11201,17 +10622,17 @@ public class leftNut extends Parser {
 	}
 
 	public static class TypeArgumentsContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(leftNut.LT, 0); }
+		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
 		public List<TypeArgumentContext> typeArgument() {
 			return getRuleContexts(TypeArgumentContext.class);
 		}
 		public TypeArgumentContext typeArgument(int i) {
 			return getRuleContext(TypeArgumentContext.class,i);
 		}
-		public TerminalNode GT() { return getToken(leftNut.GT, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(leftNut.COMMA); }
+		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(leftNut.COMMA, i);
+			return getToken(JustParser.COMMA, i);
 		}
 		public TypeArgumentsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -11219,16 +10640,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeArguments; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterTypeArguments(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeArguments(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitTypeArguments(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitTypeArguments(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeArguments(this);
 		}
 	}
 
@@ -11278,7 +10694,7 @@ public class leftNut extends Parser {
 		public ArgumentsContext arguments() {
 			return getRuleContext(ArgumentsContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(leftNut.DOT, 0); }
+		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -11291,16 +10707,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_superSuffix; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterSuperSuffix(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSuperSuffix(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitSuperSuffix(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitSuperSuffix(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSuperSuffix(this);
 		}
 	}
 
@@ -11364,7 +10775,7 @@ public class leftNut extends Parser {
 	}
 
 	public static class ExplicitGenericInvocationSuffixContext extends ParserRuleContext {
-		public TerminalNode SUPER() { return getToken(leftNut.SUPER, 0); }
+		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
 		public SuperSuffixContext superSuffix() {
 			return getRuleContext(SuperSuffixContext.class,0);
 		}
@@ -11380,16 +10791,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocationSuffix; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterExplicitGenericInvocationSuffix(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExplicitGenericInvocationSuffix(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitExplicitGenericInvocationSuffix(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitExplicitGenericInvocationSuffix(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExplicitGenericInvocationSuffix(this);
 		}
 	}
 
@@ -11448,8 +10854,8 @@ public class leftNut extends Parser {
 	}
 
 	public static class ArgumentsContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(leftNut.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(leftNut.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
 		public ExpressionListContext expressionList() {
 			return getRuleContext(ExpressionListContext.class,0);
 		}
@@ -11459,16 +10865,11 @@ public class leftNut extends Parser {
 		@Override public int getRuleIndex() { return RULE_arguments; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).enterArguments(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterArguments(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof leftNutListener ) ((leftNutListener)listener).exitArguments(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof leftNutVisitor ) return ((leftNutVisitor<? extends T>)visitor).visitArguments(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitArguments(this);
 		}
 	}
 
